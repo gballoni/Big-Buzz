@@ -8,4 +8,12 @@ def index(request):
     context = {
         "texto_qualquer": exemplo_de_variavel_no_template
     }
+
     return render(request, 'index.html', context)
+
+
+def pagina(request):
+    context = {
+        "brendon": "Brendon é um cara legal!"
+    }
+    return render(request, 'pagina.html', context)
