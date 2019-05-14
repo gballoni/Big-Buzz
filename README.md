@@ -17,3 +17,6 @@ http://bit.ly/BigBuzzMarvel
 
 Trello
 https://trello.com/b/3FAMKfTn
+
+Guia completo para os devs (Vídeo)
+https://youtu.be/k3oMcq_5X7c
