@@ -15,3 +15,7 @@ def pagina(request):
         "brendon": "Brendon é um cara legal!"
     }
     return render(request, 'pagina.html', context)
+
+def secformscontato(request):
+    context = {}
+    return render(request,'secformscontato.html',context)
