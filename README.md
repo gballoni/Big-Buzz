@@ -4,7 +4,7 @@ Projeto para a disciplina SSC0527 - Engenharia de Software - 2019/1
 
 ## Resumo do Projeto:
 
-Será desenvolvido um CMS para apresentação do projeto Sustainable Fun, desenvolvido pelas pesquisadoras:
+Será desenvolvido um CMS para apresentação do projeto Susteinable Fun, desenvolvido pelas pesquisadoras:
 
 * Natalia Moreira (cliente)
 * Francesca Arato
