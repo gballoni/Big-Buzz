@@ -17,3 +17,9 @@ def pagina(request):
         "brendon": "Brendon é um cara legal!"
     }
     return render(request, 'pagina.html', context)
+
+
+def workshop(request):
+    context = {
+    }
+    return render(request, 'workshop.html', context)
