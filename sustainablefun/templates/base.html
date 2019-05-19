@@ -10,27 +10,45 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Fonts Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
 
-    <title>Hello, world!</title>
+    {# Estilo exclusivo do template #}
+    {% block styles %}
+      <link rel="stylesheet" href="{% static 'base.css' %}">
+    {% endblock %}
+    <title>Sustainable Fun Project!</title>
   </head>
 
   {# Parte Visível do HTML #}
-  <body>
+  <body class="{% context.template_name %}" class="container">
 
     <!-- Menu superior do site para todas as páginas -->
-    <header>
-      {# Implementar aqui SE FOR COMPARTILHADO, se não, vide "block content" abaixo #}
+    <header id="header">
+      {% block header %}
+        {% include "./partials/_header.html" %}
+      {% endblock %}
     </header>
 
     <!-- Conteudo da página -->
-    <main role="main">
+    <main role="main" id="main">
+      <p>{% context.template_name %}</p>
       {# Conteúdo diferente implementado em novo template para cada função que retorna render() da view.py #}
-      {% block content %}{% endblock %}
+      {% block content %}
+      {% endblock %}
     </main>
 
+    <section id="contato">
+      {% block contato %}
+        {% include "./partials/_contatosimples.html" %}
+      {% endblock %}
+    </section>
+
     <!-- Footer do site ao fim de todas páginas -->
-    <footer class="footer text-muted">
-      {# Implementar aqui SE FOR COMPARTILHADO, se não, vide "block content" acima #}
+    <footer id="footer" class="footer text-muted">
+      {% block header %}
+        {% include "./partials/_footer.html" %}
+      {% endblock %}
     </footer>
 
     <!-- Optional JavaScript -->

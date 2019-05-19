@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'base',
+    'mptt',
+    'ckeditor',
+    'base.apps.baseConfig',
 ]
 
 MIDDLEWARE = [
@@ -128,3 +130,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(PROJECT_DIR, 'public', 'static'),
 ]
+
+CKEDITOR_BASEPATH = "/my_static/ckeditor/ckeditor/"

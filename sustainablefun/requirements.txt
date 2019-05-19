@@ -11,3 +11,6 @@ django-mptt
 
 # Slugify (transforma strings em strings aplicaveis a links na web)
 python-slugify
+
+# Biblioteca para edicao de conteudo no app
+django-ckeditor
