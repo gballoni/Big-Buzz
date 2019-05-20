@@ -1,0 +1,11 @@
+{% extends '../base.html' %}
+{% load static %}
+
+{% block content %}
+  <h1>Nome: {{ workshop.nome }}/ID: {{ workshop.id }}</h1>
+
+  <div>{{ workshop.tempo }}</div>
+  <div>{{ workshop.conteudo|safe }}</div>
+  <img src="/media/{{ workshop.imagem }}" alt="{{ workshop.nome }}">
+
+{% endblock %}
