@@ -124,11 +124,15 @@ USE_TZ = True
 MEDIA_ROOT = os.path.join(PROJECT_DIR, 'public', 'media')
 MEDIA_URL = '/media/'
 
-
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'public', 'static')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(PROJECT_DIR, 'public', 'static'),
 ]
 
-CKEDITOR_BASEPATH = "/my_static/ckeditor/ckeditor/"
+STATICFILES_FINDERS = [
+  'django.contrib.staticfiles.finders.FileSystemFinder',
+  'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
+
+CKEDITOR_BASEPATH = os.path.join(STATIC_URL, 'ckeditor/ckeditor/')
