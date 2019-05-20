@@ -21,7 +21,7 @@
   </head>
 
   {# Parte Visível do HTML #}
-  <body class="{% context.template_name %}" class="container">
+  <body class="" class="container">
 
     <!-- Menu superior do site para todas as páginas -->
     <header id="header">
@@ -32,7 +32,6 @@
 
     <!-- Conteudo da página -->
     <main role="main" id="main">
-      <p>{% context.template_name %}</p>
       {# Conteúdo diferente implementado em novo template para cada função que retorna render() da view.py #}
       {% block content %}
       {% endblock %}
@@ -46,7 +45,7 @@
 
     <!-- Footer do site ao fim de todas páginas -->
     <footer id="footer" class="footer text-muted">
-      {% block header %}
+      {% block footer %}
         {% include "./partials/_footer.html" %}
       {% endblock %}
     </footer>
