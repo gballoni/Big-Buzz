@@ -16,6 +16,11 @@ def pagina(request):
     }
     return render(request, 'pagina.html', context)
 
+def workshop(request):
+    context = {
+    }
+    return render(request, 'workshop.html', context)
+
 def secformscontato(request):
     context = {}
     return render(request,'secformscontato.html',context)
