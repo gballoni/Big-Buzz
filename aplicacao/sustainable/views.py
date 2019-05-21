@@ -24,3 +24,8 @@ def workshop(request):
 def secformscontato(request):
     context = {}
     return render(request,'secformscontato.html',context)
+
+
+def slider(request):
+    context = {}
+    return render(request, 'slider.html', context)

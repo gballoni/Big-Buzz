@@ -7,4 +7,6 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('pagina', views.pagina, name='pagina'),
     path('workshop', views.workshop, name = 'workshop'),
+    path('slider', views.slider, name='slider'),
+
 ]
