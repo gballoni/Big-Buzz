@@ -35,8 +35,8 @@ def mostra_workshop(request, workshop_slug):
 
 def secformscontato(request):
     context = {}
-    return render(request, 'secformscontato.html',context)
+    return render(request, 'partials/_contatosimples.html', context)
 
 def slider(request):
     context = {}
-    return render(request, 'slider.html', context)
+    return render(request, 'conteudo/slider.html', context)
