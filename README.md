@@ -18,6 +18,18 @@ http://bit.ly/BigBuzzMarvel
 Trello
 https://trello.com/b/3FAMKfTn
 
+Plus For Trello (componente de gestão de tempo do Chrome para o Trello):
+https://chrome.google.com/webstore/detail/plus-for-trello-time-trac/gjjpophepkbhejnglcmkdnncmaanojkf?hl=pt-BR
+
+Diario de Atividades
+https://bit.ly/30MldSz
+
+Plano de Projeto
+https://bit.ly/2Jze0iD
+
+Plano de Projeto (PDF)
+https://github.com/gballoni/Big-Buzz/blob/master/Plano%20de%20Projeto.pdf
+
 Guia completo para os devs (Vídeo)
 https://youtu.be/k3oMcq_5X7c
 
@@ -29,9 +41,3 @@ https://www.youtube.com/watch?v=f0y_xCeM1Rk
 
 Guia do Sourcetree (windows) para utilização com GitHub
 https://www.youtube.com/watch?v=l6jBcF9vurA
-
-Plano de Projeto
-https://bit.ly/2Jze0iD
-
-Plano de Projeto (PDF)
-https://github.com/gballoni/Big-Buzz/blob/master/Plano%20de%20Projeto.pdf
