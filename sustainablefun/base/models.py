@@ -51,7 +51,7 @@ class Atividade(models.Model):
     class Meta:
         unique_together = ("workshop", "numero")
     numero = models.PositiveIntegerField(verbose_name='Número da atividade')
-    nome = models.CharField(max_length=50, unique=True)
+    nome = models.CharField(max_length=50)
     workshop = models.ForeignKey('workshop', on_delete=models.CASCADE)
     publicado = models.BooleanField(default=False, verbose_name='Publicado?')
     tempo_necessario = models.CharField(verbose_name="Tempo previsto para a Atividade", max_length=30)
