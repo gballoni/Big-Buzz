@@ -24,6 +24,5 @@ pip-delete-this-directory.txt
 .idea/
 
 sustainablefun/public/static/
-sustainablefun/public/media/
 *.lock
 *.yarn-integrity

@@ -27,8 +27,10 @@ def workshops(request):
 def mostra_workshop(request, workshop_slug):
     "Função que retorna o conteudo da página de um workshop a partir de seu slug"
     workshop = get_object_or_404(Workshop, slug=workshop_slug)
+    atividades = workshop.atividade_set.filter(publicado=True).values()
     context = {
         'workshop': workshop,
+        'atividades': atividades,
     }
 
     return render(request, 'conteudo/mostra_workshop.html', context)

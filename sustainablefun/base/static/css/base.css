@@ -1,0 +1,41 @@
+html {
+  font-size: 1rem;
+}
+
+#main .workshop h1, #main .workshop .h1 {
+  color: rgb(27,181,157);
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#main .workshop h2, #main .workshop .h2 {
+  color: rgb(27,181,157);
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 1.25rem 0;
+}
+
+#main .workshop .atividade_item .card .card-header {
+  background-color: rgb(27,181,157);
+  color: #fff;
+  font-size: 2rem;
+  border-bottom: solid 3px rgb(27,181,157);
+}
+
+#main .workshop .atividade_item .card .card-header h5 {
+  font-size: 1em;
+  display: inline-block;
+  line-height: 1.75;
+}
+
+#main .workshop .atividade_item .card .card-header svg {
+  vertical-align: top;
+  background-color: #fff;
+  height: 1.75em;
+  width: 1.75em;
+}
+
+#main .workshop .atividade_item .card {
+  border: solid 3px rgb(27,181,157);
+}
