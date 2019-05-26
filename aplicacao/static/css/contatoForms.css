@@ -1,0 +1,17 @@
+#formsSimple{
+    background-image: url("/static/images/backgroundformscontat.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.text-form{
+    color: white;
+}
+
+hr{
+  border-color:#FFFFFF;
+  box-sizing:border-box;
+  width:100%;
+}
