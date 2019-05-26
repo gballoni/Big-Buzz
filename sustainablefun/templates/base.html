@@ -16,6 +16,9 @@
     {# Estilo exclusivo do template #}
     {% block styles %}
       <link rel="stylesheet" href="{% static 'css/base.css' %}">
+      <link rel="stylesheet" href="{% static 'css/workshops.css' %}" type="text/css"/>
+      <link rel="stylesheet" href="{% static 'css/contatoForms.css' %}">
+      <link rel="stylesheet" href="{% static 'css/carousel.css' %}">
     {% endblock %}
     <title>Sustainable Fun Project!</title>
   </head>
@@ -23,7 +26,19 @@
   {# Parte Visível do HTML #}
   <body class="" class="container">
 
+    <section id="above">
+      {% block above %}
+        {% include "./partials/_above.html" %}
+      {% endblock %}
+    </section>
+
     <!-- Menu superior do site para todas as páginas -->
+    <section id="menu">
+      {% block menu %}
+        {% include "./partials/_menu.html" %}
+      {% endblock %}
+    </section>
+
     <header id="header">
       {% block header %}
         {% include "./partials/_header.html" %}
