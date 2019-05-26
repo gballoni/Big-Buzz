@@ -8,5 +8,7 @@ app_name = 'base'
 urlpatterns = [
     path('', views.index, name='index'),
     path('pagina', views.pagina, name='pagina'),
+    path('workshops', views.workshops, name = 'workshops'),
     path('workshops/<workshop_slug>', views.mostra_workshop, name='mostra_workshop'),
+    path('slider', views.slider, name='slider'),
 ]

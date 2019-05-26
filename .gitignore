@@ -23,7 +23,7 @@ pip-delete-this-directory.txt
 # pycharm
 .idea/
 
-public/static/
+sustainablefun/public/static/
+sustainablefun/public/media/
 *.lock
 *.yarn-integrity
-sustainablefun/public/static/
