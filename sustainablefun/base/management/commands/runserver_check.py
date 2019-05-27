@@ -12,7 +12,7 @@ from django.contrib.staticfiles.management.commands.runserver import Command as 
 
 def printcounter():
     print("\n****************************************")
-    for i in range(5, -1, -1):
+    for i in range(10, -1, -1):
         print(f"Prospector will be ready in (about) {i} seconds!", end = '\r')
         sleep(1)
 
