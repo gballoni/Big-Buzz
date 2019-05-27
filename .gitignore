@@ -2,6 +2,7 @@
 db.sqlite3
 venv
 *.py[cod]
+.vscode
 
 # Packages
 dist
