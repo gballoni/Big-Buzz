@@ -19,7 +19,14 @@ def pagina(request):
     return render(request, 'conteudo/pagina.html', context)
 
 def workshops(request):
+    workshops = [{'titulo': 'Titulo do Workshop {}'.format(i),\
+                  'descricao': 'Descrição do Workshop {}'.format(i)\
+                 }\
+                 for i in range(1, 9)\
+                ]
+
     context = {
+        'workshops': workshops
     }
 
     return render(request, 'conteudo/workshops.html', context)
