@@ -21,6 +21,7 @@ html {
   color: #fff;
   font-size: 2rem;
   border-bottom: solid 3px rgb(27,181,157);
+  cursor: pointer;
 }
 
 #main .workshop .atividade_item .card .card-header h5 {
