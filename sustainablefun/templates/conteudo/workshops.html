@@ -9,12 +9,14 @@
             <div class="col-lg-10">
                 <div class="row justify-content-center">
                 {% for workshop in workshops %}
-                    <div class="col-lg-5 card">
-                        <img src="{% static 'images/workshop.png' %}" class="card-img-top" alt="Imagem do workshop">
-                        <div class="card-body">
-                            <h4 class="card-title">{{workshop.titulo}}</h4>
-                            <p class="card-text">{{workshop.descricao}}</p>
-                            <a href="#" class="btn btn-primary">Acessar</a>
+                    <div class="col-lg-5">
+                        <div class="card">
+                            <img src="{% static 'images/workshop.png' %}" class="card-img-top" alt="Imagem do workshop">
+                            <div class="card-body">
+                                <h4 class="card-title">{{workshop.titulo}}</h4>
+                                <p class="card-text">{{workshop.descricao}}</p>
+                                <a href="#" class="btn btn-primary">Acessar</a>
+                            </div>
                         </div>
                     </div>
                 {% endfor %}
