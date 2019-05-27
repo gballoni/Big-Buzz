@@ -3,26 +3,20 @@
 {% load static %}
 
 {% block content %}
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
-                <div class="row justify-content-center">
-                {% for workshop in workshops %}
-                    <div class="col-lg-6">
-                        <div class="card">
-                            <img src="{% static 'images/workshop.png' %}" class="card-img-top" alt="Imagem do workshop">
-                            <div class="card-body">
-                                <h4 class="card-title">{{workshop.titulo}}</h4>
-                                <p class="card-text">{{workshop.descricao}}</p>
-                                <a href="#" class="btn btn-primary">Acessar</a>
-                            </div>
-                        </div>
+        {% for workshop in workshops %}
+            <div class="col-lg-6 no-padding">
+                <div class="card">
+                    <img src="{% static 'images/workshop.png' %}" class="card-img-top" alt="Imagem do workshop">
+                    <div class="card-body">
+                        <h4 class="card-title">{{workshop.titulo}}</h4>
+                        <p class="card-text">{{workshop.descricao}}</p>
+                        <a href="#" class="btn btn-primary">Acessar</a>
                     </div>
-                {% endfor %}
                 </div>
             </div>
-            <div class="col-lg-2"></div>
+        {% endfor %}
         </div>
     </div>
 {% endblock content %}

@@ -1,7 +1,9 @@
 .card {
     margin: 2rem;
-    padding-right: 0;
-    padding-left: 0;
+}
+
+.no-padding {
+    padding: 0;
 }
 
 .card-body {
