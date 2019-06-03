@@ -34,12 +34,12 @@ def add_atividade(workshop, numero, **kwargs):
 
 def add_work_atividade(numero, atividades):
     w = add_workshop(
-        nome = 'Teste',
+        nome = 'Workshop 1./n Sustainability, what is the fuss all about?',
         slug = 'teste' + str(numero),
         publicado = True,
         imagem = 'workshops/teste' + str(numero) +'/workshop_teste0' + str(numero) + '.jpg',
-        tempo_necessario = "120 min",
-        conteudo = "<p>Teste</p>")
+        tempo_necessario = "50-60 min",
+        conteudo = "<p> Teacher’s notes </p>")
 
     for i in range(atividades):
         add_atividade(
