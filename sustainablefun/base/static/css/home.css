@@ -1,0 +1,19 @@
+.top-margin {
+    margin-top:3rem !important;
+}
+
+.bottom-margin {
+    margin-bottom: 3rem !important;
+}
+
+.margin-between {
+    margin-top: 2rem !important;
+}
+
+.image {
+    margin-right: 1rem;
+}
+
+.paragraph {
+    color: dimgray;
+}
