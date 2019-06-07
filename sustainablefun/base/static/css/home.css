@@ -17,3 +17,7 @@
 .paragraph {
     color: dimgray;
 }
+
+hr.half-width {
+    width: 50%;
+}
