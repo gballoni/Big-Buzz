@@ -49,3 +49,7 @@ def secformscontato(request):
 def slider(request):
     context = {}
     return render(request, 'conteudo/slider.html', context)
+
+def aboutus(request):
+    context = {}
+    return render(request,'conteudo/aboutus.html', context)

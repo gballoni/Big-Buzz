@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% extends '../base.html' %}
+{% load static %}
+
+{% block content %}
+
+{% block styles %}
+      <link rel="stylesheet" href="{% static 'css/base.css' %}">
+      <link rel="stylesheet" href="{% static 'css/contatoForms.css' %}">
+      <link rel="stylesheet" href="{% static 'css/secao1.css' %}">
+      <link rel="stylesheet" href="{% static 'css/aboutus.css' %}" type="text/css">
+    {% endblock %}
+
+<div class="hero">
+  <div class="inner-container">
+    <h1 class="text-center text-light text-height-bold"><strong>About Us</strong></h1>
+    <p class="lead text-center text-muted">Home / About Us</p>
+  </div>
+    <img src ="{% static 'images/aboutus.jpg' %}" class="hero-image">
+</div>
+
+<div class="container">
+    <div class="row top-margin justify-content-left">
+        <h2>Who We Are</h2>
+    </div>
+    <img src="{% static 'images/aboutus2.jpg' %}" class="float-img">
+    <div class="row margin-between bottom-margin">
+        <div class="left">
+            <p>
+                Test teste test teste test teste test teste test teste test teste test teste test teste teste.
+                Test teste test teste test teste test teste test teste test teste test teste test teste teste
+                test teste test teste test teste test teste test teste teste.
+            </p>
+        </div>
+    </div>
+    <!--<div style="text-align: right"><img src="{% static 'images/aboutus2.jpg' %}"  /></div>-->
+
+
+
+</div>
+
+
+
+
+
+{% endblock content %}
