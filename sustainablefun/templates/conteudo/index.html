@@ -5,16 +5,22 @@
 
 {% block styles %}
     <link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'css/secao1.css' %}">
 {% endblock styles %}
     
 
 {% block content %}
 
-    <h1 class="text-center text-light text-height-bold"><strong>Sustainable Fun!</strong></h1>
-    <p class="lead text-center text-muted">Turning Knowledge Into Action.<br>Creating Effective Cross-Curricular Links.</p>
-    <p class="lead row justify-content-center align-items-center">
-        <a href="#" class="btn btn-lg btn-success"><strong>GET THE DOCS</strong></a>
-    </p>
+    <div class="hero">
+        <div class="inner-container">
+            <h1 class="text-center text-light text-height-bold"><strong>Sustainable Fun!</strong></h1>
+            <p class="lead text-center text-muted">Turning Knowledge Into Action.<br>Creating Effective Cross-Curricular Links.</p>
+            <p class="lead row justify-content-center align-items-center">
+                <a href="#" class="btn btn-lg btn-success"><strong>GET THE DOCS</strong></a>
+            </p>
+        </div>
+        <img src ="{% static 'images/secao.png' %}" class="hero-image">
+    </div>
 
     {# segunda seção da home page (why use sustainable fun?) #}
     <div class="container">
