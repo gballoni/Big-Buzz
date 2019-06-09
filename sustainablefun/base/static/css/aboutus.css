@@ -27,52 +27,20 @@ body{
     margin-right: 10px;
     margin-bottom: 5px;
     padding: 2px;
+    height: 50vh;
+    width: 40vw;
 }
 
 .left {
   position: absolute;
   text-align: left;
-  width: 300px;
-  padding: 10px;
+  width: 40vw;
+  padding: 15px;
 }
 .top-margin {
-    margin-top: 3rem !important;
+    margin-top: 3rem;
 }
 
 .bottom-margin {
-    margin-bottom: 300px !important;
-}
-
-.margin-between {
-    margin-top: 2rem !important;
-}
-
-.image {
-    margin-right: 1rem;
-}
-
-.paragraph {
-    color: dimgray;
-}
-
-hr.half-width {
-    width: 50%;
-}
-
-.bg {
-  /* The image used */
-  background-image: url(../images/secao.png);
-
-  /* Half height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-h1.secao3 {
-    color: white;
-    text-shadow: 1px 1px black;
+    margin-bottom: 350px;
 }
