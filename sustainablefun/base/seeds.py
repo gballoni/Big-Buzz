@@ -34,12 +34,12 @@ def add_atividade(workshop, numero, **kwargs):
 
 def add_work_atividade(numero, atividades):
     w = add_workshop(
-        nome = 'Teste',
+        nome = 'Workshop 1./n Sustainability, what is the fuss all about?',
         slug = 'teste' + str(numero),
         publicado = True,
         imagem = 'workshops/teste' + str(numero) +'/workshop_teste0' + str(numero) + '.jpg',
-        tempo_necessario = "120 min",
-        conteudo = "<p>Teste</p>")
+        tempo_necessario = "50-60 min",
+        conteudo = "<p> Teacher’s notes \n•	 Read thoroughly the introduction and material provided in the previuos chapters;\n•	 Explanation and introduction to the concept of Circular Economy which is\nfavoured by the United Nations as ideal alternative to sustainable development;\n•	 Consider maybe watching “The true cost” to understand the scenario better.\nLearning objectives\n•	 Initial and broad introduction to the subject of the workshop to students;\n•	 Introduction to the tripod and general concepts through a word search;\n•	 Explanation of the competition (which can be adapted as please). </p>"
 
     for i in range(atividades):
         add_atividade(
