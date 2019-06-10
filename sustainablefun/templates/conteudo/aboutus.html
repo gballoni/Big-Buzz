@@ -23,9 +23,10 @@
         <div class="row top-margin justify-content-left">
             <h2>Who We Are</h2>
         </div>
-        <img src="{% static 'images/aboutus2.jpg' %}" class="float-img">
-        <div class="row margin-between bottom-margin">
-            <div class="left">
+
+        <div class="row justify-content-center align-items-center">
+
+            <div class="col-sm-8">
                 <p>
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
                     totam rem
@@ -35,8 +36,15 @@
                     dolores
                     eos qui ratione voluptatem sequi nasciunt.
                 </p>
-                <a href="#" class="btn btn-lg btn-success"><strong>GET THE DOCS</strong></a>
             </div>
+
+            <div class="col-sm-4">
+                <img class="rounded min-vw-75" src="{% static 'images/aboutus2.jpg' %}">
+            </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center mt-2">
+            <a href="#" class="btn btn-lg btn-success"><strong>GET THE DOCS</strong></a>
         </div>
         <!--<div style="text-align: right"><img src="{% static 'images/aboutus2.jpg' %}"  /></div>-->
 
