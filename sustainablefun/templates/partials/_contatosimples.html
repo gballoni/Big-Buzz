@@ -9,25 +9,24 @@
                 <h1>Entre em Contato</h1>
             </div>
             <div class="col-sm-5">
-                <form>
-
+                <form method="POST">{% csrf_token %}
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <input type="text" class="form-control" id="inputNome" placeholder="| Nome*">
                         </div>
 
                         <div class="form-group col-md-6">
-                            <input type="email" class="form-control" id="inputEmail" placeholder="| Email*">
+                            <input type="email" name="emailcontato" class="form-control" id="inputEmail" placeholder="| Email*">
                         </div>
 
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control" id="inputTelefone" placeholder="| Telefone*">
                         </div>
                         <div class="form-group col-md-12">
-                            <textarea class="form-control" id="inputMensagem" rows="5" cols="33" placeholder ="| Mensagem*" name=""></textarea>
+                            <textarea name="message" class="form-control" id="inputMensagem" rows="5" cols="33" placeholder ="| Mensagem*" name=""></textarea>
                         </div>
                         <div class="col-sm-12">
-                            <button type="submit" class="btn btn-primary btn-block">ENVIAR</button>
+                            <button id="envia-email" type="submit" class="btn btn-primary btn-block">ENVIAR</button>
                         </div>
                      </div>
                 </form>

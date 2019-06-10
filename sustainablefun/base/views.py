@@ -1,5 +1,6 @@
 from django.shortcuts import get_object_or_404, render
 from .models import Workshop
+from django.core.mail import send_mail
 
 # Create your views here.
 
@@ -16,6 +17,14 @@ def index(request):
         'reasons': reasons
     }
 
+    if request.method == 'POST':
+        message = request.POST['message']
+        email = request.POST['emailcontato']
+        send_mail('Contato - Sustanaible Fun',
+                  message,
+                  email,
+                  ['rodrigo.pereira@isemear.org.br'],
+                  fail_silently=False)
     return render(request, 'conteudo/index.html', context)
 
 def pagina(request):
