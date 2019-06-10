@@ -11,4 +11,5 @@ urlpatterns = [
     path('workshops', views.workshops, name = 'workshops'),
     path('workshops/<workshop_slug>', views.mostra_workshop, name='mostra_workshop'),
     path('slider', views.slider, name='slider'),
+    path('aboutus', views.aboutus, name='aboutus'),
 ]
