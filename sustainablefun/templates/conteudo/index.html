@@ -2,15 +2,12 @@
 {% extends '../base.html' %}
 {% load static %}
 
-
 {% block styles %}
     <link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css"/>
     <link rel="stylesheet" href="{% static 'css/secao1.css' %}">
 {% endblock styles %}
-    
 
 {% block content %}
-
     <div class="hero">
         <div class="inner-container">
             <h1 class="text-center text-light text-height-bold"><strong>Sustainable Fun!</strong></h1>
@@ -42,7 +39,7 @@
         {% endfor %}
         </div>
     </div>
-    
+
     {# terceira seção da home page (start learning sustainable fun) #}
     <div class="container-fluid" style="height: 10rem">
         <div class="row justify-content-center bg">
