@@ -1,17 +1,5 @@
-.top-margin {
-    margin-top:3rem !important;
-}
-
-.bottom-margin {
-    margin-bottom: 3rem !important;
-}
-
-.margin-between {
-    margin-top: 2rem !important;
-}
-
-.image {
-    margin-right: 1rem;
+.pt-7 {
+    padding-top: 7rem !important;
 }
 
 .paragraph {
@@ -22,17 +10,33 @@ hr.half-width {
     width: 50%;
 }
 
-.bg {
+.bg1 {
+  /* The image used */
+  background-image: url(../images/secao1.png);
+
+  height: 95vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg3 {
   /* The image used */
   background-image: url(../images/secao3.jpg);
 
-  /* Half height */
   height: 100%;
 
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+h1.secao1 {
+    color: white;
+    text-shadow: 1px 1px gray;
 }
 
 h1.secao3 {
