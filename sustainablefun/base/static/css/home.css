@@ -1,0 +1,45 @@
+.pt-7 {
+    padding-top: 7rem !important;
+}
+
+.paragraph {
+    color: dimgray;
+}
+
+hr.half-width {
+    width: 50%;
+}
+
+.bg1 {
+  /* The image used */
+  background-image: url(../images/secao1.png);
+
+  height: 95vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg3 {
+  /* The image used */
+  background-image: url(../images/secao3.jpg);
+
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1.secao1 {
+    color: white;
+    text-shadow: 1px 1px gray;
+}
+
+h1.secao3 {
+    color: white;
+    text-shadow: 1px 1px black;
+}

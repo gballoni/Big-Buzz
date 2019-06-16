@@ -1,22 +1,31 @@
 from django.shortcuts import get_object_or_404, render
 from .models import Workshop
+from django.core.mail import send_mail
 
 # Create your views here.
 
 def index(request):
-    exemplo_de_variavel_no_template = "Essa String do botão veio da função 'index' sustainable/views.py"
+    texto = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'\
+             ' Nullam enim enim, semper sit amet maximus vitae, hendrerit sed elit.'
+    cardinais = ['First', 'Second', 'Third']
+    icones = ['images/006-graduate.png', 'images/018-elearning.png', 'images/010-creative.png']
+    reasons = [{'icone': icone, 'titulo': '{} reason:'.format(card), 'descricao': texto}\
+               for icone, card in zip(icones, cardinais)\
+              ]
+              
     context = {
-        "texto_qualquer": exemplo_de_variavel_no_template
+        'reasons': reasons
     }
 
+    if request.method == 'POST':
+        message = request.POST['message']
+        email = request.POST['emailcontato']
+        send_mail('Contato - Sustanaible Fun',
+                  message,
+                  email,
+                  ['rodrigo.pereira@isemear.org.br'],
+                  fail_silently=False)
     return render(request, 'conteudo/index.html', context)
-
-def pagina(request):
-    context = {
-        "brendon": "Brendon é um cara legal!"
-    }
-
-    return render(request, 'conteudo/pagina.html', context)
 
 def workshops(request):
     workshops = [{'titulo': 'Titulo do Workshop {}'.format(i),\
