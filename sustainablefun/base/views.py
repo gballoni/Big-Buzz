@@ -69,3 +69,20 @@ def slider(request):
 def aboutus(request):
     context = {}
     return render(request,'conteudo/aboutus.html', context)
+
+def testimonials(request):
+    testimonials = [{'nome': 'Nome {}'.format(i), \
+                     'proficao': 'Profição {}'.format(i), \
+                     'numero': i, \
+                     'imagem': 'images/sustentabilidade1.jpeg', \
+                     'depoimento': 'Depoimentos {}'.format(i) \
+
+                  } \
+                 for i in range(0,3) \
+                 ]
+
+    context = {
+        'testimonials': testimonials
+    }
+
+    return render(request,'conteudo/testimonials.html', context)
