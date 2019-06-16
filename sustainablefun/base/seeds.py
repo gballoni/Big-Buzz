@@ -541,6 +541,381 @@ def populate():
                             </p>
                             <img
                                 src="/media/materiais/So_What.jpg"'''}
+            ]},
+         {'nome': 'Workshop 4. Environmental development',
+        'slug': 'workshop4',
+        'publicado': True,
+        'imagem': 'workshops/workshop4/workshop4_main.jpg',
+        'tempo_necessario': 'As this can be a very hands-on set of activities, it might be wise to distribute them over more than one hour, possibly, 50 to 60 minutes per activity',
+        'conteudo': '''<p class="m-0">
+                        <b>Teacher’s notes:</b>
+                    </p>
+                    <ul>
+                        <li>This is a very ‘hand-on’ class so depending on the number of students it
+                            might be the case to do a demonstration class, leaving more time for the paper
+                            recycling activity which is easy for pupils from a varied range of ages.</li>
+                    </ul>
+                    <p class="m-0">
+                    <b>Resources</b>
+                    </p>
+                    <ul>
+                        <li>Step by step description of how to recycle paper:</li>
+                        <li>SList of possible alternative for things found in the waste (this activity could
+                            either be carried out by the facilitator, seeking to engage the students as much as
+                        possible, or by the Students with the due attention to possible hazard);</li>
+                        <li>Thick gloves and tarp for the waste bins’ analysis (not provided).</li>
+                    </ul>
+                    <p class="m-0">
+                    <b>Learning objectives</b>
+                    </p>
+                    <ul>
+                        <li>Understand how simple sustainability processes happen and how students
+                        could possibly replicate them at home;</li>
+                        <li>Show in a very ‘shocking’ way how things could be reprocessed if they don’t
+                        get thrown on regular garbage.</li>
+                    </ul>''',
+        'atividades': [
+            {'numero': 1,
+            'nome':  'Intro',
+            'publicado': True,
+            'tempo_necessario': '5 minutes',
+            'material': '''<a>
+                            Activity annex 3 - Introduction slides 3 (on request).
+                        </a>
+                        ''',
+            'descricao': '''<p>Environmental development focusses on concepts to which students are usually
+                            aware of and might carry them out on a daily basis.</p>'''},
+            {'numero': 2,
+            'nome':  'Waste audit',
+            'publicado': True,
+            'tempo_necessario': 'up to 20-25 minutes',
+            'material': '''thick gloves, tarp, one of the school’s trash bins and the
+                            provided extra material
+                        <a
+                            href="/media/materiais/appendix_12.pdf"
+                            alt="Appendix 12"
+                            target="_blank"
+                        >
+                            (Appendix 12, p. 71)
+                        </a>''',
+            'descricao': '''<p>the facilitator will (using the due safety gear) empty
+                            one of the school’s general waste bin on the tarp. The activity relies on examining
+                            the contents and make divide the waste in different material categories (such as paper, plastic, cartons, cans, etc). After defining all the waste that could have been
+                            recycled in the proper recycling bin, the teacher will ask the students to come up (in
+                            groups) with alternative ends to the materials removed from the bins. The facilitator
+                            will be provided with an extensive list of alternative ends to a wide range of waste,
+                            this way, students will be introduced to different alternatives than the most used.</p>'''},
+            {'numero': 3,
+            'nome':  'Paper recycling',
+            'publicado': True,
+            'tempo_necessario': '50-60 minutes',
+            'material': '''How to recycle paper
+                        <a>
+                            href="/media/materiais/appendix_13.pdf"
+                            alt="Appendix 13"
+                            target="_blank"
+                        
+                            (Appendix 13, p. 76)
+                        </a>''',
+            'descricao': '''<p>The facilitator and students should follow the instructions from the card, using
+                                paper found in the classroom’s scrap paper tray.
+                                Student can also use materials for decoration (such as seeds, dried leaves or
+                                flowers, glitters).
+                                The facilitator has to discuss about the 3Rs, Reduce, Reuse, Recycle.
+                                These are the key points of the discussion with the students:</p>
+                            <ol>
+                                <li>The facilitator should ask the students where does the paper come from and
+                                what needs to be made. The discussion should be about reducing the amout of
+                                tree cut to produce paper and cardboard. Motivate the students to Reduce their waste: “Do I really need to use a sheet of
+                                paper/do I really need to print a document or can I read it from my laptop?</li>
+                                <li>If they really need to use some paper, the facilitator should motivate them to
+                                Reuse that paper, telling the students to always put the paper in the classroom’s
+                                scrap paper tray in order to write on the opposite side.</li>
+                                <li>When the paper is written on both sides, students can throw it in the paper
+                                recycling bin in order to make new paper and avoiding to cut more trees.</li>
+                                <li>The facilitator should them motivate the students to buy recycled paper,
+                                otherwise if no one buys recycled paper, there is no point in doing it.
+                                The facilitator should tell the student that they can recognize recycled paper by
+                                findind on the paper the logo below.</li>
+                            </ol>
+                            <ul>
+                                <li>Students are expected to interact differently with waste and see it as an
+                                input to something else than the landfill; they should also remember well the 3Rs
+                                whenever they use or buy something with the grownups.</li>
+                                <li>To give students a different perspective this workshop emphasises changes
+                                students could do to improve their carbon footprint.</li>
+                            </ul>'''}
+        ]},
+
+        {'nome': 'Workshop 5. Economic development',
+        'slug': 'workshop5',
+        'publicado': True,
+        'imagem': 'workshops/workshop5/workshop5_main.jpg',
+        'tempo_necessario': 'c. 60 minutes',
+        'conteudo': '''<p class="m-0">
+                        <b>Teacher’s notes:</b>
+                    </p>
+                    <ul>
+                        <li>TThe economic aspects of sustainability are one of the most complicated
+                        factors to be understood as it tends to be secondary to most people. The general
+                        idea behind it is that sustainable development cannot rely on economic disparity.</li>
+                        <li>In order to achieve an universal improvement the wealth needs to be spread.</li>
+                        <li>In simple terms: It is much harder to think about cleaning industrial waste
+                        when the population can barely feed itself.</li>
+                        <li>In order to explain this we decided to develop mind maps like the one bellow:</li>
+                    </ul>
+                    <p class="m-0">
+                    <b>Resources</b>
+                    </p>
+                    <ul>
+                        <li>Step by step description of how to recycle paper:</li>
+                        <li>SList of possible alternative for things found in the waste (this activity could
+                            either be carried out by the facilitator, seeking to engage the students as much as
+                        possible, or by the Students with the due attention to possible hazard);</li>
+                        <li>Thick gloves and tarp for the waste bins’ analysis (not provided).</li>
+                    </ul>
+                    <p class="m-0">
+                    <b>Learning objectives</b>
+                    </p>
+                    <ul>
+                        <li>Understand the importance of economic development;</li>
+                        <li>Educate about the extensions of pollution within a developed and
+                            underdeveloped community.</li>
+                    </ul>
+                    <a>
+                            href="/media/materiais/the_conscious_consumer.jpg"
+                            alt="The Conscious Consumer"
+                        
+                            The Conscious Consumer Image
+                    </a>''',
+
+            'atividades': [
+            {'numero': 1,
+            'nome':  'WORKSHOP DESCRIPTION',
+            'publicado': True,
+            'tempo_necessario': '60 minutes',
+            'material': '''<a>
+                        </a>
+                        ''',
+            'descricao': '''<p>
+                            <ul>Environmental development focusses on concepts to which students are usually
+                            aware of and might carry them out on a daily basis.
+                            <li>Students will be provided with backup information for two case studies and
+                            they should analyse (Appendix 14, p. 78):
+                            <ol>
+                                <li>How the cases describe being fair;</li>
+                                <li>How the cases portray their profits;</li>
+                                <li>How do the companies satisfy their customer’s demands?</li>
+                            </ol></li>
+                            <li>Once these points are analysed the students are expected to develop an
+                            idealised map in which they evaluate (locally and globally) the benefits from each
+                            company.</li>
+                            <li>Once done so, they can discuss how to improve those points on their Bear’s
+                            Cave proposal.</li>                            
+                            </ul></p>
+                            <p class="m-0">
+                            <b>Expected outcome</b>
+                            </p>
+                            <p>
+                                <ul>
+                                    <li>Even though this activity might be considered too advanced for some
+                                    students, the idea here is mainly: how can a company profit, be fair and satisfy their
+                                    customer’s demands at the same time;</li>
+                                    <li>If deemed too complicated, students can also go through the global
+                                    citizenship slides to analyse the differences between countries in regards to
+                                    development and sustainability. Trying to answer the following questions:
+                                        <ol>
+                                        <li>Why is it harder for underdeveloped countries to impose stricter labour
+                                        and environmental legislations?</li>
+                                        <li>The Kyoto protocol also evaluates the differences in development
+                                        when considering each country’s emissions. This way, countries that started
+                                        developing their industries later have space to grow. Do you think this measure is
+                                        adequate?</li>
+                                        </ol>
+                                    </li>
+
+                                </ul>
+                            </p>'''}
+        ]},
+
+
+        {'nome': 'Workshop 6. Debate',
+        'slug': 'workshop6',
+        'publicado': True,
+        'imagem': 'workshops/workshop6/workshop6_main.jpg',
+        'tempo_necessario': 'c. 60 minutes',
+        'conteudo': '''<p class="m-0">
+                        <b>Teacher’s notes:</b>
+                    </p>
+                    <ul>
+                        <li>In this case it might be good to read all the debate cards in order to
+                        understand the topic or maybe research points you might not be too clear about.</li>
+                    </ul>
+                    <p class="m-0">
+                    <b>Learning objectives</b>
+                    </p>
+                    <ul>
+                        <li>Argue a point of view, even if you disagree with it.</li>
+                    </ul>''',
+
+            'atividades': [
+            {'numero': 1,
+            'nome':  'WORKSHOP DESCRIPTION',
+            'publicado': True,
+            'tempo_necessario': '60 minutes',
+            'material': '''debate cards <a
+                            href="/media/materiais/appendix_15.pdf"
+                            alt="Appendix 15"
+                            target="_blank">
+                            Word search (Appendix 15, p. 82)
+                        </a>''',
+            'descricao': '''<p>
+                            <ul>
+                            <li>Attached to this guide there are 6 different topic propositions, depending on
+                                the size of the group one or more topics should be chosen;</li>
+                            <li>Students should be divided between ‘For’, ‘Against’ and judges;</li>
+                            <li>Students should read the cards and think about how the issues on the card
+                            can motivate their discussion.</li>
+                            <li>Instigate discussion to motivate them to think about the sentences and ideas
+                            proposed on the card.</li>
+                            <li>Student will then have 10 to 15 minutes to create an argument to be
+                            presented to the judges.</li>
+                            <li><As in any other debate there should be time for both participants to present
+                            their case, be cross-examined and rebut. Finally being evaluated by the judges./li>
+                            <p class="m-0">
+                            <b>Expected outcome</b>
+                            </p>
+                                <ul>
+                                    <li>Depending on the student’s year it is important (and a part of the curriculum)
+                                        that they clearly understand the concept behind arguing their point of view. This
+                                        activity is key to ensure they understood the concepts studied thus far and to
+                                        motivate them to discuss and develop an argument wisely.</li>
+                                    <li>Besides making the students discuss and defend their ‘actor’s’ point of view,
+                                        the students will hear the other perspectives;</li>
+                                </ul>
+                            </p>'''}
+        ]},
+
+        {'nome': 'Workshop 7. Upcycling',
+        'slug': 'workshop7',
+        'publicado': True,
+        'imagem': 'workshops/workshop7/workshop7_main.jpg',
+        'tempo_necessario': 'c. 60 minutes',
+        'conteudo': '''<p class="m-0">
+                        <b>Teacher’s notes:</b>
+                    </p>
+                    <ul>
+                        <li>This very hands-on activity is another attempt to motivate students to
+                        generate goods of materials considered waste;</li>
+                        <li>This should be advertised before the workshop to ensure students bring
+                        material from home, such as old clothes, toilet and kitchen rolls, etc;</li>
+                        <li>Please beware of possible threats like needles.</li>
+                    </ul>
+                    <p class="m-0">
+                    <b>Learning objectives</b>
+                    </p>
+                    <ul>
+                        <li>Learn how to deal with waste in a sustainable and fun manner</li>
+                    </ul>''',
+
+            'atividades': [
+            {'numero': 1,
+            'nome':  'Activity description',
+            'publicado': True,
+            'tempo_necessario': '60 minutes',
+            'material': '''This guide provides <a
+                            href="/media/materiais/appendix_16.pdf"
+                            alt="Appendix 16"
+                            target="_blank">
+                            Word search (Appendix 16, p. 92)
+                        </a> different ways to produce the following:''',
+            'descricao': '''<p>
+                            <ul>
+                            <li>Toilet roll mobile holder;</li>
+                            <li>Jeans utility belt;</li>
+                            <li>Water filter;</li>
+                            <li>IMobile speakers;</li>
+                            <li>Notebook cover;</li>
+                            <li>Necklaces made of t-shirts;</li>
+                            <li>Pencil cases;</li>
+                            <li>T-shirt carrier bag;</li>
+                            <li>Glasses case.</li>
+                            </ul>
+                            </p>
+                            <p>All the material and steps are provided on each upcycling cards, but feel free to
+                            search for more activities.
+                            </p>
+                            <p class="m-0">
+                            <b>Expected outcome</b>
+                            </p>
+                            <p>
+                            Once more students are expected to be creative and provide an alternative end to
+                            the simple materials, easily found at home.
+                            </p>'''}
+        ]},
+
+         {'nome': 'Workshop 8. The Bear’s cave - Final',
+        'slug': 'workshop8',
+        'publicado': True,
+        'imagem': 'workshops/workshop8/workshop8_main.jpg',
+        'tempo_necessario': 'c.50 - 60 minutes',
+        'conteudo': '''<p class="m-0">
+                        <b>Teacher’s notes:</b>
+                    </p>
+                    <ul>
+                        <li>There is a cycle of different levels of pressure towards higher profits as well
+as towards sustainability. In order to satisfy all the actors this forces should be able
+to balance each other.</li>
+                        <li>This final activity is targeted at evaluating how the students absorbed the
+information from the previous workshops and used it towards their own business
+proposition.</li>
+                    </ul>
+                    <p class="m-0">
+                    <b>Resources</b>
+                    </p>
+                    <ul>
+                        <li>In the appendix 17 (p. 103) there are three cards to help on the assessment:
+                            a Gantt chart to understand the level of organisation the students achieved, a
+                            scorecard with the essential information they should provide, and a project charter
+                            for clearer understanding of the whole picture.</li>
+                    </ul>
+                    <p class="m-0">
+                    <b>Learning objectives</b>
+                    </p>
+                    <ul>
+                        <li>This activity was developed to evaluate the programme as a whole with
+                            all its activities and to observe how the students adapted to the concepts and
+                            incorporated them into their business and daily perceptions.</li>
+                    </ul>''',
+
+            'atividades': [
+            {'numero': 1,
+            'nome':  'Activity description',
+            'publicado': True,
+            'tempo_necessario': '60 minutes',
+            'material': ''' ''',
+            'descricao': '''<p>
+                            <ul>
+                            <li>Each group will be given 10 minutes to present their business plan.</li>
+                            <li>The judging panel will have 5 minutes for questions and answers, followed
+                            by 5 minutes of questions and answers from their colleagues.</li>
+                            <li>After all groups presented the judges will have about 10 minutes to compare
+                            propositions and chose the most adequate regarding: chances of success,
+                            coherence, sustainable impact, etc</li>
+                            </ul>
+                            </p>
+                            <p class="m-0">
+                            <b>Expected outcome</b>
+                            </p>
+                            <p>
+                            <ul>
+                            <li>After the full workshops students are expected to have a broader and
+                            more useful understanding of sustainability, distancing it from only recycling.
+                            The students are also expected to improve their understanding of how they can
+                            improve their behaviour as well as that from their friends and family.</li>
+                            <li>If interested in more activities, please see extension activities bellow.</li>
+                            </ul>
+                            </p>'''}
             ]}
     ]
     
