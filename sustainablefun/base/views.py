@@ -27,13 +27,6 @@ def index(request):
                   fail_silently=False)
     return render(request, 'conteudo/index.html', context)
 
-def pagina(request):
-    context = {
-        "brendon": "Brendon é um cara legal!"
-    }
-
-    return render(request, 'conteudo/pagina.html', context)
-
 def workshops(request):
     workshops = [{'titulo': 'Titulo do Workshop {}'.format(i),\
                   'descricao': 'Descrição do Workshop {}'.format(i)\

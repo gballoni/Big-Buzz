@@ -4,51 +4,69 @@
 
 {% block styles %}
     <link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css"/>
-    <link rel="stylesheet" href="{% static 'css/secao1.css' %}">
 {% endblock styles %}
 
 {% block content %}
-    <div class="hero">
-        <div class="inner-container">
-            <h1 class="text-center text-light text-height-bold"><strong>Sustainable Fun!</strong></h1>
-            <p class="lead text-center text-muted">Turning Knowledge Into Action.<br>Creating Effective Cross-Curricular Links.</p>
-            <p class="lead row justify-content-center align-items-center">
-                <a href="#" class="btn btn-lg btn-success"><strong>GET THE DOCS</strong></a>
-            </p>
-        </div>
-        <img src ="{% static 'images/secao.png' %}" class="hero-image">
-    </div>
-
-    {# segunda seção da home page (why use sustainable fun?) #}
-    <div class="container">
-        <div class="row top-margin justify-content-center">
-            <h2>Why Use Sustainable Fun?</h2>
-        </div>
-        <hr class="half-width">
-        <div class="row margin-between bottom-margin">
-        {% for reason in reasons %}
-            <div class="col-lg-4">
+    <div class="container-fluid">
+        {# primeira seção da home page #}
+        <div class="row justify-content-center bg1">
+            <div class="col-lg-5 col-sm-10 pt-7">
                 <div class="row">
-                    <img class="image" src="{% static reason.icone %}" alt="formatura">
-                    <h4>{{ reason.titulo }}</h4>
+                    <div class="col-12" align="center">
+                        <h1 class="secao1 text-light text-height-bold">
+                            <strong>Sustainable Fun!</strong>
+                        </h1>
+                    </div>
                 </div>
                 <div class="row">
-                    <p class="paragraph">{{ reason.descricao }}</p>
+                    <div class="col-12 pt-2" align="center">
+                        <p class="lead text-muted">
+                            Turning Knowledge Into Action.<br>
+                            Creating Effective Cross-Curricular Links.
+                        </p>
+                        <a href="{% url 'base:workshops' %}" class="btn btn-lg btn-success"><strong>GET STARTED</strong></a>
+                    </div>
                 </div>
             </div>
-        {% endfor %}
         </div>
-    </div>
 
-    {# terceira seção da home page (start learning sustainable fun) #}
-    <div class="container-fluid" style="height: 10rem">
-        <div class="row justify-content-center bg">
-            <div class="col-lg-7 align-self-center" align="center">
-                <h1 class="secao3"><strong>Start learning Sustainable Fun! Now</strong></h1>
+        {# segunda seção da home page (why use sustainable fun?) #}
+        <div class="container">
+            <div class="row mt-5 justify-content-center">
+                <div class="col-12" align="center">
+                    <h2>Why Use Sustainable Fun?</h2>
+                </div>
             </div>
-            <div class="col-lg-3 align-self-center" align="center">
-                <a href="#" class="btn btn-primary">GET STARTED</a>
+            <hr class="half-width">
+            <div class="row mt-4 mb-5">
+            {% for reason in reasons %}
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="{% static reason.icone %}" alt="reason's icon">
+                        </div>
+                        <div class="col-10">
+                            <h4>{{ reason.titulo }}</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 p-2">
+                            <p class="paragraph">{{ reason.descricao }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
             </div>
         </div>
+
+        {# terceira seção da home page (start learning sustainable fun) #}
+            <div class="row justify-content-center bg3 pt-5 pb-5">
+                <div class="col-lg-7 pt-4 pb-4" align="center">
+                    <h1 class="secao3"><strong>Start learning Sustainable Fun! Now</strong></h1>
+                </div>
+                <div class="col-lg-3 pt-4 pb-4" align="center">
+                    <a href="{% url 'base:workshops' %}" class="btn btn-primary">GET STARTED</a>
+                </div>
+            </div>
     </div>
 {% endblock content %}
