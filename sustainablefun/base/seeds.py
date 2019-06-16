@@ -514,30 +514,26 @@ def populate():
                             </p>
                             <img
                                 src="/media/materiais/Global_citizenship_is.jpg"'''},
-         {'numero': 5,
+         
+            {'numero': 5,
             'nome':  'So what? (solutions for the Dragon’s Den)',
             'publicado': True,
             'tempo_necessario': '5 minutes',
-            'material': '''Where your clothes come from maps - Labour, Production,Consumers.
-                        <a
-                            href="/media/materiais/appendix_11.pdf"
-                            alt="Appendix 11"
-                            target="_blank"
-                        >
-                            Word search (Appendix 11, p. 62)
-                        </a> This should also help:''',
+            'material': ''' ''',
                 'descricao': '''<p>After learning more about these issues the teams are going to work together
-                                towards their ‘Bear’s Cave’ projects. They are expected to discuss how they will
-                                approach social aspects in their projects and how consumers could be involved in
-                                the improvement of lives around the world.</p>
-                            <p>
-                            Expected outcome:
-                            <ul>
-                                <li>Students will understand the association of quality of life, income and the globalised textile industry;</li>
-                                <li>nitial conceptualisation of how something as simple as clothing can be
-                                    related to a more complex system;</li>
-                                <li>Start shaping their project proposition into a possible instrument for change.</li>
-                            </ul>
+								towards their ‘Bear’s Cave’ projects. They are expected to discuss how they will
+								approach social aspects in their projects and how consumers could be involved in
+								the improvement of lives around the world.</p>
+                            	<p class="m-0">
+                        		<b>Expected outcome:</b>
+                    			</p>
+                            
+                            	<ul>
+                                	<li>Students will understand the association of quality of life, income and the
+										globalised textile industry;</li>
+                                	<li>Initial conceptualisation of how something as simple as clothing can be</li>
+                                	<li>Start shaping their project proposition into a possible instrument for change.</li>
+                            	</ul>
                             </p>
                             <img
                                 src="/media/materiais/So_What.jpg"'''}
