@@ -864,11 +864,11 @@ def populate():
                     </p>
                     <ul>
                         <li>There is a cycle of different levels of pressure towards higher profits as well
-as towards sustainability. In order to satisfy all the actors this forces should be able
-to balance each other.</li>
+                            as towards sustainability. In order to satisfy all the actors this forces should be able
+                            to balance each other.</li>
                         <li>This final activity is targeted at evaluating how the students absorbed the
-information from the previous workshops and used it towards their own business
-proposition.</li>
+                            information from the previous workshops and used it towards their own business
+                            proposition.</li>
                     </ul>
                     <p class="m-0">
                     <b>Resources</b>
