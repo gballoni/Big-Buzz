@@ -391,8 +391,159 @@ def populate():
                                 Learn varied concepts, objects and practices involved
                                 in sustainability through the games in an interactive way.
                             </p>'''}
-        ]}
+        ]},
+        {'nome': 'Workshop 3. Social Development',
+        'slug': 'workshop3',
+        'publicado': True,
+        'imagem': 'workshops/workshop3/workshop3_main.jpg',
+        'tempo_necessario': 'c. 50-60 minutes',
+        'conteudo': '''<p class="m-0">
+                        <b>Teacher’s notes:</b>
+                    </p>
+                    <ul>
+                        <li>Student might consider the material strong in some of the videos, hence its implementation through a quiz;</li>
+                        <li>It’s essential to know that raw materials are generally planted or produced
+                            in underdeveloped countries and that work condition in these countries can be
+                            deplorable due to poor legislation, labour laws and enforcement;</li>
+                        <li>Labour can be considered the most negative aspect of the textile industry as
+                            cheap labour tends to increase profit;</li>
+                        <li>The supply chain reflects the need for cheaper materials and labour, so
+                            consequently the products have to ‘travel’ longer distance from the production plant
+                            to the market.</li>
+                    </ul>
+                    <p class="m-0">
+                        <b>Learning objectives:</b>
+                    </p>
+                    <ul>
+                        <li>ntroduce the students to the global production environment in which their
+                            clothes are inserted;</li>
+                        <li>Initial understanding of the concept of globalization and the production
+                            pipeline’s needs;</li>
+                        <li>Understanding of the lengths a garment might ‘travel’.</li>
+                    </ul>''',
+        'atividades': [
+            {'numero': 1,
+            'nome':  'Do you agree or disagree (and why?)',
+            'publicado': True,
+            'tempo_necessario': '5 minutes',
+            'material': '''set of questions
+                        <a
+                            href="/media/materiais/appendix_8.pdf"
+                            alt="Appendix 9"
+                            target="_blank"
+                        >
+                            (Appendix 8, p. 59)
+                        </a>
+                        ''',
+            'descricao': '''<ol>
+                                <li>The instructor/teacher will start this activity with a set of questions which are   
+                                    intended to facilitate the discussion that will follow</li>
+                                <li>The students should decide if they agree, disagree or are unsure</li>
+                                <li>The students are then expected to interact and try to change their</li>
+                                <li>colleagues’ minds defending their point of view.</li>
+                                <li>Give the students around 5 minutes per topic (also depending on their
+                                    participation level) and then recount who agrees or disagrees, always trying to     
+                                    motivate them to discuss the topics.</li>
+                            </ol>'''},
+
+                            
+
+            {'numero': 2,
+            'nome':  'T-shirt price breakdown',
+            'publicado': True,
+            'tempo_necessario': '5 minutes',
+            'material': '''Sketch of a t-shirt cost break
+                        <a
+                            href="/media/materiais/appendix_9.pdf"
+                            alt="Appendix 9"
+                            target="_blank"
+                        >
+                            Word search (Appendix 9, p. 60)
+                        </a>''',
+                        'descricao': '''<p>After answering the ‘agree or disagree’ questions the students will be separated         
+                                into their teams and given a t-shirt breakdown chart for discussion about the       
+                                distribution of the price, ideally comparing the retail margin to the worker’s.</p>'''},
+            {'numero': 3,
+            'nome':  'General introduction - videoquiz',
+            'publicado': True,
+            'tempo_necessario': '30 minutes',
+            'material': '''<ol>
+                            <li> a. Links to open-source videos online:
+                                <ol>
+                                <li>‘The toxic price of leather’ Sean Gallagher (https://vimeo.com/88261827)</li>
+                                <li>‘Fair Trade: Improving lives’ – The Fairtrade Foundation (https://www.youtube.com/watch?v=4tvLHDxv4B4)</li>
+                                </ol>
+                            <li> b. 2 sets of questions for the quiz (1 per video);</li>
+                            </ol>
+                       <a
+                            href="/media/materiais/appendix_10.pdf"
+                            alt="Appendix 10"
+                            target="_blank"
+                        >
+                            Word search (Appendix 10, p. 61)
+                        </a>''',
+                         'descricao': '''<p>Even though these videos can be considered harsh they portrait very clearly
+                                            the intrinsic connection between the social aspects of production and the
+                                            environmental, which tends to be the most recognised consequence of production.
+                                            Doing this with a quiz guarantees that the students will pay more attention to the
+                                            content of the video in order to make more points.</p>'''},
+            {'numero': 4,
+            'nome':  'Where do your clothes come from?',
+            'publicado': True,
+            'tempo_necessario': '5 minutes',
+            'material': '''Where your clothes come from maps - Labour, Production,Consumers.
+                        <a
+                            href="/media/materiais/appendix_11.pdf"
+                            alt="Appendix 11"
+                            target="_blank"
+                        >
+                            Word search (Appendix 11, p. 62)
+                        </a> This should also help:''',
+            'descricao': '''<p>Once the students have heard of the critical situations in India, Uganda, etc. It
+                                is essential for them to learn where those countries are, giving the facilitator an
+                                opportunity to teach some historical events which might have led to this, such as:</p>
+                            <p>
+                                <ol>
+                                <li>Colonialism;</li>
+                                <li>The crusades and the “discovery of the east”;</li>
+                                <li>The silk roads;</li>
+                                <li>The goods triangle between cotton produced in the USA, manufactured goods from the UK and slaves from African countries;</li>
+                                <li>Neo-colonialism;</li>
+                                <li>The industrial revolution, and others.</li>
+                                </ol>
+                            </p>
+                            <img
+                                src="/media/materiais/Global_citizenship_is.jpg"'''},
+         {'numero': 5,
+            'nome':  'So what? (solutions for the Dragon’s Den)',
+            'publicado': True,
+            'tempo_necessario': '5 minutes',
+            'material': '''Where your clothes come from maps - Labour, Production,Consumers.
+                        <a
+                            href="/media/materiais/appendix_11.pdf"
+                            alt="Appendix 11"
+                            target="_blank"
+                        >
+                            Word search (Appendix 11, p. 62)
+                        </a> This should also help:''',
+                'descricao': '''<p>After learning more about these issues the teams are going to work together
+                                towards their ‘Bear’s Cave’ projects. They are expected to discuss how they will
+                                approach social aspects in their projects and how consumers could be involved in
+                                the improvement of lives around the world.</p>
+                            <p>
+                            Expected outcome:
+                            <ul>
+                                <li>Students will understand the association of quality of life, income and the globalised textile industry;</li>
+                                <li>nitial conceptualisation of how something as simple as clothing can be
+                                    related to a more complex system;</li>
+                                <li>Start shaping their project proposition into a possible instrument for change.</li>
+                            </ul>
+                            </p>
+                            <img
+                                src="/media/materiais/So_What.jpg"'''}
+            ]}
     ]
+    
     print('Populando Banco de Dados...')
     for _workshop in _workshops:
         w = add_or_update_workshop(**_workshop)
