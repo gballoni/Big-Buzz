@@ -56,8 +56,8 @@ class Atividade(models.Model):
     publicado = models.BooleanField(default=False, verbose_name='Publicado?')
     tempo_necessario = models.CharField(verbose_name="Tempo previsto para a Atividade", max_length=30)
     # TODO: Transformar materiais em outro objeto? Ou um conjunto de arquivos?
-    material = models.CharField(verbose_name="Materiais para a Atividade", max_length=30)
-    descricao = models.TextField(verbose_name="Descrição da Atividade", max_length=500)
+    material = RichTextField(verbose_name="Materiais para a Atividade", null=True, blank=True)
+    descricao = RichTextField(verbose_name="Descrição da Atividade")
 
     def __str__(self):
         return f"{self.workshop} - {self.numero}/{self.nome}"

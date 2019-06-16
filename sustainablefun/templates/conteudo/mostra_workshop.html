@@ -51,15 +51,22 @@
                 <b>Time required: </b>
                 {{ atividade.tempo_necessario }}
               </p>
-              <p class="m-0">
-                <b>Material provided: </b>
-                {{ atividade.material }}
-              </p>
-              <p class="mb-3 mt-3 descricao">
+              {% if atividade.material %}
+                <p class="m-0">
+                  <span>
+                    <b>Material provided: </b>
+                  </span>
+                  <span class="atividade material">
+                    {{ atividade.material|safe }}
+                  </span>
+                </p>
+              {% endif %}
+              <p class="mb-3 mt-3">
                 <b>Activity description: </b>
-                <br>
-                {{ atividade.descricao }}
               </p>
+              <div class="atividade descricao">
+                {{ atividade.descricao|safe }}
+              </div>
             </div>
           </div>
         </div>

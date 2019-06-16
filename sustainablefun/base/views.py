@@ -6,13 +6,14 @@ from django.core.mail import send_mail
 
 def index(request):
     texto = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'\
-             ' Nullam enim enim, semper sit amet maximus vitae, hendrerit sed elit.'
+            ' Nullam enim enim, semper sit amet maximus vitae, hendrerit sed elit.'
     cardinais = ['First', 'Second', 'Third']
     icones = ['images/006-graduate.png', 'images/018-elearning.png', 'images/010-creative.png']
-    reasons = [{'icone': icone, 'titulo': '{} reason:'.format(card), 'descricao': texto}\
-               for icone, card in zip(icones, cardinais)\
-              ]
-              
+    reasons = [
+        {'icone': icone, 'titulo': '{} reason:'.format(card), 'descricao': texto}\
+        for icone, card in zip(icones, cardinais)\
+    ]
+
     context = {
         'reasons': reasons
     }
@@ -20,11 +21,12 @@ def index(request):
     if request.method == 'POST':
         message = request.POST['message']
         email = request.POST['emailcontato']
-        send_mail('Contato - Sustanaible Fun',
-                  message,
-                  email,
-                  ['rodrigo.pereira@isemear.org.br'],
-                  fail_silently=False)
+        send_mail(
+            'Contato - Sustanaible Fun',
+            message,
+            email,
+            ['rodrigo.pereira@isemear.org.br'],
+            fail_silently=False)
     return render(request, 'conteudo/index.html', context)
 
 def pagina(request):
@@ -35,11 +37,12 @@ def pagina(request):
     return render(request, 'conteudo/pagina.html', context)
 
 def workshops(request):
-    workshops = [{'titulo': 'Titulo do Workshop {}'.format(i),\
-                  'descricao': 'Descrição do Workshop {}'.format(i)\
-                 }\
-                 for i in range(1, 9)\
-                ]
+    workshops = [
+        {'titulo': 'Titulo do Workshop {}'.format(i),\
+        'descricao': 'Descrição do Workshop {}'.format(i)\
+        }\
+        for i in range(1, 9)\
+    ]
 
     context = {
         'workshops': workshops
