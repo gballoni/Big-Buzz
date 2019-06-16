@@ -215,9 +215,10 @@ def populate():
                                 based, if they have a corporate social responsibility or any kind of sustainability
                                 department, etc.
                             </p>
-                            <img
+                            <img>
                                 src="/media/materiais/key_business_plan_elements.jpg"'''}
-        ]},
+        		
+	]},
 
         {'nome': 'Workshop 2. Green Quiz',
         'slug': 'workshop2',
@@ -512,7 +513,7 @@ def populate():
                                 <li>The industrial revolution, and others.</li>
                                 </ol>
                             </p>
-                            <img
+                            <img>
                                 src="/media/materiais/Global_citizenship_is.jpg"'''},
          
             {'numero': 5,
@@ -535,7 +536,7 @@ def populate():
                                 	<li>Start shaping their project proposition into a possible instrument for change.</li>
                             	</ul>
                             </p>
-                            <img
+                            <img>
                                 src="/media/materiais/So_What.jpg"'''}
             ]},
          {'nome': 'Workshop 4. Environmental development',
