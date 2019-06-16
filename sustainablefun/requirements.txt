@@ -1,13 +1,17 @@
-django==2.2.1
+# Dependencias base
+django==2.2.2
+Pillow==5.4.1
+astroid==2.1.0
+pylint==2.2.2
 
 # Linter para python/django
-prospector
+prospector==1.1.6.4
 
 # Biblioteca para utilizar estruturas hierarquicas em DBs
-django-mptt
+django-mptt==0.10.0
 
 # Slugify (transforma strings em strings aplicaveis a links na web)
-python-slugify
+python-slugify==3.0.2
 
 # Biblioteca para edicao de conteudo no app
-django-ckeditor
+django-ckeditor==5.7.1
