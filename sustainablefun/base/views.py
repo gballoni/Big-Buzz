@@ -1,10 +1,12 @@
 from django.shortcuts import get_object_or_404, render
 from .models import Workshop
 from django.core.mail import send_mail
+from .forms import ContactForm
 
 # Create your views here.
 
 def index(request):
+    contact_form = ContactForm(request.POST or None)
     texto = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'\
             ' Nullam enim enim, semper sit amet maximus vitae, hendrerit sed elit.'
     cardinais = ['First', 'Second', 'Third']
@@ -15,12 +17,13 @@ def index(request):
     ]
 
     context = {
-        'reasons': reasons
+        'reasons': reasons,
+        "form":contact_form
     }
 
     if request.method == 'POST':
-        message = request.POST['message']
-        email = request.POST['emailcontato']
+        message = request.POST['mensagem']
+        email = request.POST['email']
         send_mail(
             'Contato - Sustanaible Fun',
             message,
@@ -55,7 +58,13 @@ def mostra_workshop(request, workshop_slug):
     return render(request, 'conteudo/mostra_workshop.html', context)
 
 def secformscontato(request):
-    context = {}
+    contact_form = ContactForm(request.POST or None)
+    context = {
+        "nome":contact_form.nome,
+        "email":contact_form.email,
+        "mensagem":contact_form.mensagem,
+        "form":contact_form
+    }
     return render(request, 'partials/_contatosimples.html', context)
 
 def slider(request):
@@ -65,3 +74,4 @@ def slider(request):
 def aboutus(request):
     context = {}
     return render(request,'conteudo/aboutus.html', context)
+
