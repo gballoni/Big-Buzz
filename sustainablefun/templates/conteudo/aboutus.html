@@ -13,7 +13,8 @@
     <div class="hero">
         <div class="inner-container">
             <h1 class="text-center text-light text-height-bold"><strong>About Us</strong></h1>
-            <p class="lead text-center text-muted">Home / About Us</p>
+            <a style="color:whitesmoke;" href="{% url 'base:index' %}">Home / </a>
+            <a style="color:whitesmoke;" href="{% url 'base:aboutus' %}">About Us</a>
         </div>
         <img src="{% static 'images/aboutus.jpg' %}" class="hero-image">
     </div>
@@ -43,7 +44,8 @@
         </div>
 
         <div class="row justify-content-center align-items-center mt-2">
-            <a href="#" class="btn btn-lg btn-success"><strong>GET THE DOCS</strong></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://docs.wixstatic.com/ugd/32b8c8_88c35ef3a6164d3088865ecbaccd23ad.pdf"
+               class="btn btn-lg btn-success"><strong>GET THE DOCS</strong></a>
         </div>
         <!--<div style="text-align: right"><img src="{% static 'images/aboutus2.jpg' %}"  /></div>-->
 
