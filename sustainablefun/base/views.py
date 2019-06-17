@@ -67,8 +67,8 @@ def testimonials(request):
     testimonials = [{'nome': 'Nome {}'.format(i), \
                      'proficao': 'Profição {}'.format(i), \
                      'numero': i, \
-                     'imagem': 'images/sustentabilidade1.jpeg', \
-                     'depoimento': 'Depoimentos {}'.format(i) \
+                     'imagem': 'https://mdbootstrap.com/img/Photos/Avatars/img%20(3{}).jpg'.format(i), \
+                     'depoimento': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic  {}'.format(i) \
 
                   } \
                  for i in range(0,3) \

@@ -22,7 +22,6 @@
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  background-color: #777;
   overflow: hidden;
 }
 
