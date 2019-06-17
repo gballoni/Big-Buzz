@@ -14,9 +14,9 @@
                 <div class="card">
                     <img src="{% static 'images/workshop.png' %}" class="card-img-top" alt="Imagem do workshop">
                     <div class="card-body">
-                        <h4 class="card-title">{{workshop.titulo}}</h4>
-                        <p class="card-text">{{workshop.descricao}}</p>
-                        <a href="#" class="btn btn-primary">Acessar</a>
+                        <h4 class="card-title">{{workshop.nome}}</h4>
+                        <p class="card-text">Time required: {{workshop.tempo_necessario}}</p>
+                        <a href="{% url 'base:mostra_workshop' workshop.slug %}" class="btn btn-primary">Acessar</a>
                     </div>
                 </div>
             </div>
