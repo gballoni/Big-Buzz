@@ -1,0 +1,16 @@
+
+.MENU {
+    letter-spacing: 0.025em;
+    transition: background-color 0.2s linear;
+    font-weight: bold;
+}
+
+.MENU_OPACO {
+    background-color: lightgray;
+    transition: background-color 0.2s linear;
+}
+
+.ITEM_MENU_OPACO {
+    color: black !important;
+    font-weight: normal;
+}

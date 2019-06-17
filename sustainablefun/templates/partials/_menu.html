@@ -1,9 +1,12 @@
 <!doctype html>
 {% load static %}
-<nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-center fixed-top">
+
+<link rel="stylesheet" href="{% static 'css/menu.css' %}" type="text/css"/>
+
+<nav class="navbar navbar-expand-lg navbar-dark d-flex justify-content-center fixed-top MENU">
     <div class="d-flex justify-content-center">
         <a class="navbar-brand" href="{% url 'base:index' %}">
-        <img border="0" src="{% static 'images/logo.png' %}" width="200" height="40">
+            <img border="0" src="{% static 'images/logo.png' %}" width="200" height="40">
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
@@ -33,3 +36,6 @@
         </button>
     </div>
 </nav>
+
+{# Estilização e Funções específicas para animação do menu (Transparência ao "scrollar") #}
+
