@@ -30,12 +30,7 @@ def index(request):
     return render(request, 'conteudo/index.html', context)
 
 def workshops(request):
-    workshops = [
-        {'titulo': 'Titulo do Workshop {}'.format(i),\
-        'descricao': 'Descrição do Workshop {}'.format(i)\
-        }\
-        for i in range(1, 9)\
-    ]
+    workshops = Workshop.objects.all()
 
     context = {
         'workshops': workshops
