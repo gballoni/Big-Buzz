@@ -199,10 +199,10 @@ def populate():
     (Appendix 2, p. 45)
     </a>,
     <a
-    href="/media/materiais/key_business_plan_elements.jpg"
+    href="/media/materiais/key_business_plan_elements.png"
     alt="Key Business Plan Elements Image"
     >
-    Key Business Plan Elements Image
+    Key Business Plan Elements Image    
     </a>''',
     'descricao': '''<p>After analysing the diagram the students should start thinking about what they
     will develop for their ‘Bear’s Cave’ businesses and how they could possibly use
@@ -454,7 +454,7 @@ def populate():
     alt="Appendix 9"
     target="_blank"
     >
-    Word search (Appendix 9, p. 60)
+   T-Shirt Breakdow (Appendix 9, p. 60)
     </a>''',
     'descricao': '''<p>After answering the ‘agree or disagree’ questions the students will be separated
     into their teams and given a t-shirt breakdown chart for discussion about the
@@ -476,7 +476,7 @@ def populate():
     alt="Appendix 10"
     target="_blank"
     >
-    Word search (Appendix 10, p. 61)
+   Video Quiz Questions (Appendix 10, p. 61)
     </a>''',
     'descricao': '''<p>Even though these videos can be considered harsh they portrait very clearly
     the intrinsic connection between the social aspects of production and the
@@ -493,7 +493,7 @@ def populate():
     alt="Appendix 11"
     target="_blank"
     >
-    Word search (Appendix 11, p. 62)
+    Production Map (Appendix 11, p. 62)
     </a> This should also help:''',
     'descricao': '''<p>Once the students have heard of the critical situations in India, Uganda, etc. It
     is essential for them to learn where those countries are, giving the facilitator an
@@ -603,10 +603,11 @@ def populate():
     'publicado': True,
     'tempo_necessario': '50-60 minutes',
     'material': '''How to recycle paper
-    <a>
+    <a
     href="/media/materiais/appendix_13.pdf"
     alt="Appendix 13"
     target="_blank"
+    >
     (Appendix 13, p. 76)
     </a>''',
     'descricao': '''<p>The facilitator and students should follow the instructions from the card, using
@@ -879,7 +880,12 @@ def populate():
     'nome':  'Activity description',
     'publicado': True,
     'tempo_necessario': '60 minutes',
-    'material': ''' ''',
+    'material': '''Bear's cave scorecard <a
+    href="/media/materiais/appendix_17.pdf"
+    alt="appendix 17"
+    target="_blank">
+    Bear's cave scorecard (Appendix 17, p. 103)
+    </a>''',
     'descricao': '''<p>
     <ul>
     <li>Each group will be given 10 minutes to present their business plan.</li>
