@@ -1,0 +1,2 @@
+release: ./run.sh heroku
+web: gunicorn sustainablefun.config.wsgi --log-file -
