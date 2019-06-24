@@ -33,7 +33,7 @@ def index(request):
     return render(request, 'conteudo/index.html', context)
 
 def workshops(request):
-    workshops = Workshop.objects.all()
+    workshops = Workshop.objects.all().order_by('nome')
 
     context = {
         'workshops': workshops
