@@ -40,3 +40,35 @@ html {
 #main .workshop .atividade_item .card {
   border: solid 3px rgb(27,181,157);
 }
+
+.mw-50 {
+  max-width: 50% !important;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .mw-sm-50 {
+    max-width: 50% !important;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .mw-md-50 {
+    max-width: 50% !important;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .mw-lg-50 {
+    max-width: 50% !important;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .mw-xl-50 {
+    max-width: 50% !important;
+  }
+}
