@@ -16,13 +16,15 @@ import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 PROJECT_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-BASE_DIR = os.path.abspath(os.path.dirname(PROJECT_DIR))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '%-e82ju&yg-ih$all5zbq=i-%0h9p=@j-z82n*34nu&4ry+d@-'
+SECRET_KEY = os.environ.get('SKEY')
+if not SECRET_KEY:
+    SECRET_KEY = '%-dev_super_secret_key@-'
 
 ENV = os.environ.get('ENVIROMENT')
 
@@ -135,6 +137,9 @@ MEDIA_URL = '/media/'
 
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'public', 'static')
 STATIC_URL = '/static/'
+
+if ENV == 'Production':
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_FINDERS = [
   'django.contrib.staticfiles.finders.FileSystemFinder',

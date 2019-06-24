@@ -69,4 +69,3 @@ def slider(request):
 def aboutus(request):
     context = {}
     return render(request,'conteudo/aboutus.html', context)
-

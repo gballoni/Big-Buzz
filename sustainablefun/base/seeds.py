@@ -202,7 +202,7 @@ def populate():
     href="/media/materiais/key_business_plan_elements.png"
     alt="Key Business Plan Elements Image"
     >
-    Key Business Plan Elements Image    
+    Key Business Plan Elements Image
     </a>''',
     'descricao': '''<p>After analysing the diagram the students should start thinking about what they
     will develop for their ‘Bear’s Cave’ businesses and how they could possibly use
