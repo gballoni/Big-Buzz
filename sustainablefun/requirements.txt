@@ -4,6 +4,7 @@ Pillow==5.4.1
 astroid==2.1.0
 pylint==2.2.2
 gunicorn==19.9.0
+environ
 
 # Dependencias Heroku
 django-heroku==0.3.0

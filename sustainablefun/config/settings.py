@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import django_heroku
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 PROJECT_DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
@@ -23,12 +24,16 @@ BASE_DIR = os.path.abspath(os.path.dirname(PROJECT_DIR))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '%-e82ju&yg-ih$all5zbq=i-%0h9p=@j-z82n*34nu&4ry+d@-'
 
+ENV = os.environ.get('ENVIROMENT')
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+if ENV == 'Production':
+    DEBUG = False
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sustainablefun.herokuapp.com']
 
 
 # Application definition
@@ -47,6 +52,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -87,6 +93,10 @@ DATABASES = {
     }
 }
 
+DATABASE_URL = os.environ.get('DATABASE_URL')
+
+if DATABASE_URL:
+    DATABASES['default'] = dj_database_url.parse(DATABASE_URL, conn_max_age=600)
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -120,7 +130,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 MEDIA_ROOT = os.path.join(PROJECT_DIR, 'public', 'media')
@@ -137,3 +146,6 @@ STATICFILES_FINDERS = [
 CKEDITOR_BASEPATH = os.path.join(STATIC_URL, 'ckeditor/ckeditor/')
 
 django_heroku.settings(locals())
+
+#  Configuration for static files storage using whitenoise
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
