@@ -146,6 +146,11 @@ STATICFILES_FINDERS = [
   'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 ]
 
+# TODO: Tirar esse cara quando sairmos do Heroku!!!!
+STATICFILES_DIRS = [
+    os.path.join(PROJECT_DIR, 'public', 'media'),
+]
+
 CKEDITOR_BASEPATH = os.path.join(STATIC_URL, 'ckeditor/ckeditor/')
 
 #  Configuration for static files storage using whitenoise
