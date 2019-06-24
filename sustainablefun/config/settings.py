@@ -35,7 +35,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ALLOWED_HOSTS = ['sustainablefun.herokuapp.com']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -82,7 +81,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
@@ -96,7 +94,7 @@ DATABASES = {
 DATABASE_URL = os.environ.get('DATABASE_URL')
 
 if DATABASE_URL:
-    DATABASES['default'] = dj_database_url.parse(DATABASE_URL, conn_max_age=600)
+    DATABASES['default'] = dj_database_url.parse(DATABASE_URL, conn_max_age=500)
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -145,7 +143,7 @@ STATICFILES_FINDERS = [
 
 CKEDITOR_BASEPATH = os.path.join(STATIC_URL, 'ckeditor/ckeditor/')
 
-django_heroku.settings(locals())
-
 #  Configuration for static files storage using whitenoise
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+django_heroku.settings(locals())

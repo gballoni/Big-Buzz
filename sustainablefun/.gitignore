@@ -2,7 +2,9 @@
 db.sqlite3
 venv
 *.py[cod]
+staticfiles
 .vscode
+.env
 
 # Packages
 dist
@@ -16,6 +18,7 @@ develop-eggs
 lib
 lib64
 __pycache__
+node_modules
 
 # Installer logs
 pip-log.txt
