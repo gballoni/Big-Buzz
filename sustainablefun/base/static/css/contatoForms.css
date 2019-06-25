@@ -8,9 +8,10 @@
 
 .text-form{
     color: white;
+    text-align: center;
 }
 
-hr{
+#linha{
   border-color:#FFFFFF;
   box-sizing:border-box;
   width:100%;
