@@ -6,7 +6,7 @@ class ContactForm(forms.Form):
             attrs={
                     "class": "form-control",
                     "id": "inputNome",
-                    "placeholder": "| Name*"
+                    "placeholder": "| Nome*"
                 }
             )
         )
@@ -26,7 +26,7 @@ class ContactForm(forms.Form):
             attrs={
                 "class": "form-control",
                 "id": "inputTelefone",
-                "placeholder": "| Phone*"
+                "placeholder": "| Telefone*"
             }
         )
     )
@@ -39,7 +39,7 @@ class ContactForm(forms.Form):
                     "rows": "5",
                     "cols" :"33",
                     "id": "inputMensagem",
-                    "placeholder": "| Message*"
+                    "placeholder": "| Mensagem*"
                 }
             )
 )
