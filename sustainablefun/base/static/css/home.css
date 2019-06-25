@@ -36,6 +36,13 @@ hr.half-width {
 
 h1.secao1 {
     color: white;
+    font-size: 6em;
+    text-shadow: 1px 1px gray;
+}
+
+#subtitle{
+    font-size: 2em;
+    color: #000000;
     text-shadow: 1px 1px gray;
 }
 
