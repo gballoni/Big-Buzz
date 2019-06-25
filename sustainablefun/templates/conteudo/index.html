@@ -1,4 +1,3 @@
-<!doctype html>
 {% extends '../base.html' %}
 {% load static %}
 
@@ -62,16 +61,12 @@
         </div>
 
         {# terceira seção da home page (start learning sustainable fun) #}
-            <div class="row justify-content-center bg3 pt-5 pb-5">
-                <div class="col-lg-7 pt-4 pb-4" align="center">
-                    <h1 class="secao3"><strong>Start learning Sustainable Fun! Now</strong></h1>
-                </div>
-                <div class="col-lg-3 pt-4 pb-4" align="center">
-                    <a href="{% url 'base:workshops' %}" class="btn btn-primary">GET STARTED</a>
-                </div>
+        <div class="row justify-content-center bg3 pt-5 pb-5">
+            <div class="col-lg-7 pt-4 pb-4" align="center">
+                <h1 class="secao3"><strong>Start learning Sustainable Fun! Now</strong></h1>
             </div>
-        {# 4 seção da home page (start learning sustainable fun) #}
 
+        {# 4 seção da home page (start learning sustainable fun) #}
         <div class="container">
             <section class="text-center my-5">
             <!-- Section heading -->
@@ -120,6 +115,9 @@
                     </div>
                 </div>
             </section>
+            <div class="col-12 pt-4 pb-4" align="center">
+                <a href="{% url 'base:workshops' %}" class="btn btn-primary">GET STARTED</a>
+            </div>
         </div>
     </div>
 {% endblock content %}

@@ -27,11 +27,12 @@ class Banner(models.Model):
         return self.slug
 
 class Workshop(models.Model):
-    nome = models.CharField(verbose_name="Nome do Workshop", max_length=30)
-    slug = models.SlugField(verbose_name="Apelido do Workshop", unique=True, blank=True, max_length=30)
+    nome = models.CharField(verbose_name="Nome do Workshop", max_length=125)
+    slug = models.SlugField(verbose_name="Apelido do Workshop", unique=True, blank=True, max_length=125)
+    resumo = models.CharField(verbose_name="Resumo do Workshop", max_length=255)
     publicado = models.BooleanField(default=False, verbose_name='Publicado?')
     imagem = models.ImageField(upload_to=object_file_path, verbose_name="Imagem para ser utilizada no Workshop")
-    tempo_necessario = models.CharField(verbose_name="Tempo previsto para o Workshop", max_length=30)
+    tempo_necessario = models.CharField(verbose_name="Tempo previsto para o Workshop", max_length=255)
     conteudo = RichTextField(verbose_name="Conteúdo do Workshop")
 
     # Método de "limpeza" para ser executado antes de salvar um modelo (muito útil para tratamento de campos)
@@ -51,13 +52,13 @@ class Atividade(models.Model):
     class Meta:
         unique_together = ("workshop", "numero")
     numero = models.PositiveIntegerField(verbose_name='Número da atividade')
-    nome = models.CharField(max_length=50)
+    nome = models.CharField(max_length=125)
     workshop = models.ForeignKey('workshop', on_delete=models.CASCADE)
     publicado = models.BooleanField(default=False, verbose_name='Publicado?')
-    tempo_necessario = models.CharField(verbose_name="Tempo previsto para a Atividade", max_length=30)
+    tempo_necessario = models.CharField(verbose_name="Tempo previsto para a Atividade", max_length=255)
     # TODO: Transformar materiais em outro objeto? Ou um conjunto de arquivos?
-    material = models.CharField(verbose_name="Materiais para a Atividade", max_length=30)
-    descricao = models.TextField(verbose_name="Descrição da Atividade", max_length=500)
+    material = RichTextField(verbose_name="Materiais para a Atividade", null=True, blank=True)
+    descricao = RichTextField(verbose_name="Descrição da Atividade")
 
     def __str__(self):
         return f"{self.workshop} - {self.numero}/{self.nome}"

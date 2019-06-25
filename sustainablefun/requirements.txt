@@ -3,6 +3,15 @@ django==2.2.2
 Pillow==5.4.1
 astroid==2.1.0
 pylint==2.2.2
+gunicorn==19.9.0
+environ
+
+# Dependencias Heroku
+django-heroku==0.3.0
+dj-database-url
+whitenoise
+psycopg2-binary
+psycopg2
 
 # Linter para python/django
 prospector==1.1.6.4
