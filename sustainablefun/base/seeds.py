@@ -2,9 +2,10 @@ from .models import Workshop, Atividade
 
 def add_or_update_workshop(slug, **kwargs):
     """Cria uma tupla workshop no BD, caso uma já não exista, baseado no slug informado.
-    Um workshop deve ter as chaves 'nome', 'slug', 'publicado', 'imagem', 'tempo_necessario'
+    Um workshop deve ter as chaves 'nome', 'slug', 'resumo', 'publicado', 'imagem', 'tempo_necessario'
     e 'conteúdo'. Retorna o objeto que representa a tupla."""
     n = kwargs.get('nome', None)
+    r = kwargs.get('resumo', None)
     p = kwargs.get('publicado', None)
     i = kwargs.get('imagem', None)
     t = kwargs.get('tempo_necessario', None)
@@ -14,6 +15,7 @@ def add_or_update_workshop(slug, **kwargs):
         Workshop.objects.get_or_create(
             nome=n,
             slug=slug,
+            resumo=r,
             publicado=p,
             imagem=i,
             tempo_necessario=t,
@@ -21,6 +23,7 @@ def add_or_update_workshop(slug, **kwargs):
     else:
         w.update(
             nome=n,
+            resumo=r,
             publicado=p,
             imagem=i,
             tempo_necessario=t,
@@ -100,6 +103,7 @@ def populate():
     _workshops = [
     {'nome': 'Workshop 1. Sustainability, what is the fuss all about?',
     'slug': 'workshop1',
+    'resumo': 'Lorem ipsum egestas nibh consequat duis, etiam sed pulvinar class.',
     'publicado': True,
     'imagem': 'workshops/workshop1/workshop1_main.jpg',
     'tempo_necessario': 'c. 50-60 minutes',
@@ -220,6 +224,7 @@ def populate():
     ]},
     {'nome': 'Workshop 2. Green Quiz',
     'slug': 'workshop2',
+    'resumo': 'Lorem ipsum primis imperdiet laoreet aliquam, ad augue tincidunt lobortis.',
     'publicado': True,
     'imagem': 'workshops/workshop2/workshop2_main.jpg',
     'tempo_necessario': 'c. 50-60 minutes',
@@ -393,6 +398,7 @@ def populate():
     ]},
     {'nome': 'Workshop 3. Social Development',
     'slug': 'workshop3',
+    'resumo': 'Lorem ipsum viverra imperdiet pretium feugiat, vitae pharetra fames magna.',
     'publicado': True,
     'imagem': 'workshops/workshop3/workshop3_main.jpg',
     'tempo_necessario': 'c. 50-60 minutes',
@@ -535,6 +541,7 @@ def populate():
     ]},
     {'nome': 'Workshop 4. Environmental development',
     'slug': 'workshop4',
+    'resumo': 'Lorem ipsum sit in vulputate commodo, ligula adipiscing lobortis fermentum.',
     'publicado': True,
     'imagem': 'workshops/workshop4/workshop4_main.jpg',
     'tempo_necessario': '''As this can be a very hands-on set of activities, it might be wise to
@@ -641,6 +648,7 @@ def populate():
     ]},
     {'nome': 'Workshop 5. Economic development',
     'slug': 'workshop5',
+    'resumo': 'Lorem ipsum aliquet sollicitudin ac scelerisque, elementum torquent luctus eros.',
     'publicado': True,
     'imagem': 'workshops/workshop5/workshop5_main.jpg',
     'tempo_necessario': 'c. 60 minutes',
@@ -731,6 +739,7 @@ def populate():
     ]},
     {'nome': 'Workshop 6. Debate',
     'slug': 'workshop6',
+    'resumo': 'Lorem ipsum orci nunc quam lectus, turpis nunc suscipit varius. ',
     'publicado': True,
     'imagem': 'workshops/workshop6/workshop6_main.jpg',
     'tempo_necessario': 'c. 60 minutes',
@@ -787,6 +796,7 @@ def populate():
     ]},
     {'nome': 'Workshop 7. Upcycling',
     'slug': 'workshop7',
+    'resumo': 'Lorem ipsum eros porttitor pretium nostra, sem sit potenti urna.',
     'publicado': True,
     'imagem': 'workshops/workshop7/workshop7_main.jpg',
     'tempo_necessario': 'c. 60 minutes',
@@ -844,6 +854,7 @@ def populate():
     ]},
     {'nome': 'Workshop 8. The Bear’s cave - Final',
     'slug': 'workshop8',
+    'resumo': 'Lorem ipsum imperdiet blandit ac tempor, ante posuere consectetur et.',
     'publicado': True,
     'imagem': 'workshops/workshop8/workshop8_main.jpg',
     'tempo_necessario': 'c.50 - 60 minutes',
