@@ -29,6 +29,7 @@ class Banner(models.Model):
 class Workshop(models.Model):
     nome = models.CharField(verbose_name="Nome do Workshop", max_length=125)
     slug = models.SlugField(verbose_name="Apelido do Workshop", unique=True, blank=True, max_length=125)
+    resumo = models.CharField(verbose_name="Resumo do Workshop", max_length=255)
     publicado = models.BooleanField(default=False, verbose_name='Publicado?')
     imagem = models.ImageField(upload_to=object_file_path, verbose_name="Imagem para ser utilizada no Workshop")
     tempo_necessario = models.CharField(verbose_name="Tempo previsto para o Workshop", max_length=255)
