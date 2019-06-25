@@ -1,14 +1,40 @@
 {% load static %}
+<script>
+    var csrftoken = '{{ csrf_token }}'
+    $(document).ready(function () {
+        $('#envia-email').click(function (e) {
+            e.preventDefault();
+            $.ajax({
+                url: "/infoform",
+                type: 'POST',
+                headers: {'X-CSRFToken': csrftoken},
+                data: {
+                    nome : "Maria Fernanda",
+                    email : "rodrigobsi@usp.br",
+                    mensagem: 'Eii'
+                },
+                success: function(msg){
+                  $("#formulario").html(msg.resposta);
+                },
+                error: function () {
+                    window.alert('deu ruim')
+                }
+            })
+        })
+
+    })
+
+</script>
 <div id="formsSimple">
     <div class="container">
         <div class="row justify-content-end">
             <div class="col-sm-5 d-flex flex-column justify-content-center align-items-center text-form">
-                <h1>Ficou com Dúvida ?</h1>
-                <hr/>
-                <h1>Entre em Contato</h1>
+                <h1> Do you have any question ?</h1>
+                <hr id="linha"><hr/>
+                <h1>Contact Us</h1>
             </div>
             <div class="col-sm-5">
-                <form method="POST">{% csrf_token %}
+                <form method="POST" id="formulario">{% csrf_token %}
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             {{form.nome}}
@@ -25,10 +51,11 @@
                             {{form.mensagem}}
                         </div>
                         <div class="col-sm-12">
-                            <button id="envia-email" type="submit" class="btn btn-primary btn-block">ENVIAR</button>
+
                         </div>
                      </div>
                 </form>
+                <button  id="envia-email" type="submit" class="btn btn-primary btn-block">SEND</button>
             </div>
         </div>
     </div>
