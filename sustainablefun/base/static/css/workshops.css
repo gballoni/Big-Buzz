@@ -9,3 +9,16 @@
 .card-body {
     background-color:ghostwhite;
 }
+
+.workshop-div {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    position: relative
+}
+
+.workshop-image {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+}

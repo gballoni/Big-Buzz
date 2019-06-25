@@ -2,14 +2,9 @@
 {% load static %}
 
 {% block content %}
-  <div class="container workshop">
+  <div class="container workshop p-5">
     <h1>{{ workshop.nome }}</h1>
     <div class="{{ workshop.slug }}">
-      <img
-        class="float-md-right"
-        src="/media/{{ workshop.imagem }}"
-        alt="{{ workshop.nome }}"
-      >
       <p>
         <b>Time required: </b>
         {{ workshop.tempo_necessario }}

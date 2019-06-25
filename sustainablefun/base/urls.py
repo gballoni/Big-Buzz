@@ -11,5 +11,11 @@ urlpatterns = [
     path('workshops/<workshop_slug>', views.mostra_workshop, name='mostra_workshop'),
     path('slider', views.slider, name='slider'),
     path('aboutus', views.aboutus, name='aboutus'),
-    path('infoform',views.secformscontato, name='cadastraformulario')
+    path('testimonials', views.testimonials, name='testimonials'),
+
+
+
+
+
+
 ]
