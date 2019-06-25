@@ -3,6 +3,8 @@
 
 {% block styles %}
     <link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'css/workshops.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'css/testimonials.css' %}" type="text/css" />
 {% endblock styles %}
 
 {% block content %}
@@ -63,7 +65,57 @@
             <div class="col-lg-7 pt-4 pb-4" align="center">
                 <h1 class="secao3"><strong>Start learning Sustainable Fun! Now</strong></h1>
             </div>
-            <div class="col-lg-3 pt-4 pb-4" align="center">
+
+        {# 4 seção da home page (start learning sustainable fun) #}
+        <div class="container">
+            <section class="text-center my-5">
+            <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold my-5">Testimonials</h2>
+                <div class="wrapper-carousel-fix">
+                <!-- Carousel Wrapper -->
+                    <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade" data-ride="carousel"
+                    data-interval="5000">
+                    <!--Slides-->
+                        <div class="carousel-inner" role="listbox">
+                        <!--First slide-->
+                            {% for testimonial in testimonials %}
+
+                                <div class="carousel-item {% if testimonial.numero == 0%} active {% else %} seila {% endif %}">
+
+                                    <div class="testimonial">
+                                    <!--Avatar-->
+                                        <div class="avatar mx-auto mb-4">
+                                          <img src="{{testimonial.imagem}}" class="rounded-circle img-fluid"
+                                            alt="First sample avatar image">
+                                        </div>
+                                        <!--Content-->
+                                        <p>
+                                          <i class="fas fa-quote-left"></i>{{ testimonial.depoimento }}
+                                        </p>
+                                    <h4 class="font-weight-bold">{{ testimonial.nome }}</h4>
+                                    <h6 class="font-weight-bold my-3">{{ testimonial.proficao }}</h6>
+                                    </div>
+                                </div>
+                            <!--First slide-->
+                            {% endfor %}
+                        <!--Controls-->
+                        <a class="carousel-control-prev left carousel-control" href="#carousel-example-1" role="button"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next right carousel-control" href="#carousel-example-1" role="button"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                        <!--Controls-->
+                        </div>
+                    <!-- Carousel Wrapper -->
+                    </div>
+                </div>
+            </section>
+            <div class="col-12 pt-4 pb-4" align="center">
                 <a href="{% url 'base:workshops' %}" class="btn btn-primary">GET STARTED</a>
             </div>
         </div>
