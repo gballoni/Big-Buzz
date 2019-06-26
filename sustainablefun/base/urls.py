@@ -12,4 +12,5 @@ urlpatterns = [
     path('slider', views.slider, name='slider'),
     path('aboutus', views.aboutus, name='aboutus'),
     path('testimonials', views.testimonials, name='testimonials'),
+    path('infoform', views.secformscontato, name='cadastraformulario'),
 ]

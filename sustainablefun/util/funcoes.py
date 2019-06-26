@@ -1,7 +1,26 @@
 import os
 from slugify import slugify
+from base.forms import ContactForm
+from django.core.mail import send_mail
 
 # Funções utilitárias que serão utilizadas em vários módulos
+
+def envia_mensagem(request):
+    assunto = 'Contato - Sustanaible Fun'
+    mensagem = 'De: ' + request.POST.get('nome') + '\n' +\
+        'Telefone: ' + request.POST.get('telefone') + '\n' +\
+        'Mensagem: ' + request.POST.get('mensagem')
+    email = request.POST.get('email')
+    para = ['rodrigo.pereira@isemear.org.br']
+    send_mail(
+        assunto,
+        mensagem,
+        email,
+        para,
+        fail_silently=False)
+
+def cria_forms():
+    return ContactForm(None)
 
 def custom_errors(nome, campo):
     "Mensagens de erro customizadas para serem utilizadas em formulários diversos."

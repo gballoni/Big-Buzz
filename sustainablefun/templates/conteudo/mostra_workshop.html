@@ -2,26 +2,8 @@
 {% load static %}
 
 {% block content %}
-  <div class="container workshop">
+  <div class="container workshop p-5">
     <h1>{{ workshop.nome }}</h1>
-    <div class="row">
-      <div class="col">
-        <div class="{{ workshop.slug }}">
-          <img
-            class="float-md-right mw-100 mw-md-50 ml-md-2 mb-2"
-            src="/{{ workshop.imagem }}"
-            alt="{{ workshop.nome }}"
-          >
-          <p>
-            <b>Time required: </b>
-            {{ workshop.tempo_necessario }}
-          </p>
-          <div class="workshop conteudo">
-            {{ workshop.conteudo|safe }}
-          </div>
-        </div>
-      </div>
-    </div>
     <h2>WORKSHOP DESCRIPTION</h2>
     <div id="accordion_{{ workshop.slug }}" class="atividade_item mb-5">
       {% for atividade in atividades %}
