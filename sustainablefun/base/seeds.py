@@ -101,7 +101,7 @@ def populate():
     {'nome': 'Workshop 1. Sustainability, what is the fuss all about?',
     'slug': 'workshop1',
     'publicado': True,
-    'imagem': 'workshops/workshop1/workshop1_main.jpg',
+    'imagem': 'static/workshops/workshop1/workshop1_main.jpg',
     'tempo_necessario': 'c. 50-60 minutes',
     'conteudo': '''<p class="m-0">
     <b>Teacher’s notes:</b>
@@ -126,7 +126,7 @@ def populate():
     'publicado': True,
     'tempo_necessario': '15 minutes',
     'material': '''<a
-    href="/media/materiais/activity_anex_1.pdf"
+    href="/static/materiais/activity_anex_1.pdf"
     alt="Activity Anex 1"
     target="_blank"
     >
@@ -141,7 +141,7 @@ def populate():
     'publicado': True,
     'tempo_necessario': '15 minutes',
     'material': '''<a
-    href="/media/materiais/appendix_1.pdf"
+    href="/static/materiais/appendix_1.pdf"
     alt="Appendix 1"
     target="_blank"
     >
@@ -192,14 +192,14 @@ def populate():
     'tempo_necessario': '10 minutes',
     'material': '''Circular and linear economy diagrams
     <a
-    href="/media/materiais/appendix_2.pdf"
+    href="/static/materiais/appendix_2.pdf"
     alt="Appendix 2"
     target="_blank"
     >
     (Appendix 2, p. 45)
     </a>,
     <a
-    href="/media/materiais/key_business_plan_elements.png"
+    href="/static/materiais/key_business_plan_elements.png"
     alt="Key Business Plan Elements Image"
     >
     Key Business Plan Elements Image
@@ -216,12 +216,12 @@ def populate():
     department, etc.
     </p>
     <img>
-    src="/media/materiais/key_business_plan_elements.jpg"'''}
+    src="/static/materiais/key_business_plan_elements.jpg"'''}
     ]},
     {'nome': 'Workshop 2. Green Quiz',
     'slug': 'workshop2',
     'publicado': True,
-    'imagem': 'workshops/workshop2/workshop2_main.jpg',
+    'imagem': 'static/workshops/workshop2/workshop2_main.jpg',
     'tempo_necessario': 'c. 50-60 minutes',
     'conteudo': '''<p class="m-0">
     <b>Teacher’s notes:</b>
@@ -246,7 +246,7 @@ def populate():
     'publicado': True,
     'tempo_necessario': '5 minutes',
     'material': '''<a
-    href="/media/materiais/activity_anex_2.pdf"
+    href="/static/materiais/activity_anex_2.pdf"
     alt="Activity Anex 2"
     target="_blank"
     >
@@ -263,7 +263,7 @@ def populate():
     'tempo_necessario': '10 minutes',
     'material': '''United Nations Sustainable Development Goals
     <a
-    href="/media/materiais/appendix_3.pdf"
+    href="/static/materiais/appendix_3.pdf"
     alt="Appendix 3"
     target="_blank"
     >
@@ -299,7 +299,7 @@ def populate():
     'tempo_necessario': '10 minutes',
     'material': '''Images by theme
     <a
-    href="/media/materiais/appendix_4.pdf"
+    href="/static/materiais/appendix_4.pdf"
     alt="Appendix 4"
     target="_blank"
     >
@@ -319,7 +319,7 @@ def populate():
     'tempo_necessario': '10 minutes',
     'material': '''Production description
     <a
-    href="/media/materiais/appendix_5.pdf"
+    href="/static/materiais/appendix_5.pdf"
     alt="Appendix 5"
     target="_blank"
     >
@@ -340,7 +340,7 @@ def populate():
     'tempo_necessario': '5 minutes',
     'material': '''Figures
     <a
-    href="/media/materiais/appendix_6.pdf"
+    href="/static/materiais/appendix_6.pdf"
     alt="Appendix 6"
     target="_blank"
     >
@@ -362,7 +362,7 @@ def populate():
     'tempo_necessario': '15 minutes',
     'material': '''Quiz me!
     <a
-    href="/media/materiais/appendix_7.pdf"
+    href="/static/materiais/appendix_7.pdf"
     alt="Appendix 7"
     target="_blank"
     >
@@ -394,7 +394,7 @@ def populate():
     {'nome': 'Workshop 3. Social Development',
     'slug': 'workshop3',
     'publicado': True,
-    'imagem': 'workshops/workshop3/workshop3_main.jpg',
+    'imagem': 'static/workshops/workshop3/workshop3_main.jpg',
     'tempo_necessario': 'c. 50-60 minutes',
     'conteudo': '''<p class="m-0">
     <b>Teacher’s notes:</b>
@@ -427,7 +427,7 @@ def populate():
     'tempo_necessario': '5 minutes',
     'material': '''set of questions
     <a
-    href="/media/materiais/appendix_8.pdf"
+    href="/static/materiais/appendix_8.pdf"
     alt="Appendix 9"
     target="_blank"
     >
@@ -450,7 +450,7 @@ def populate():
     'tempo_necessario': '5 minutes',
     'material': '''Sketch of a t-shirt cost break
     <a
-    href="/media/materiais/appendix_9.pdf"
+    href="/static/materiais/appendix_9.pdf"
     alt="Appendix 9"
     target="_blank"
     >
@@ -472,7 +472,7 @@ def populate():
     <li> b. 2 sets of questions for the quiz (1 per video);</li>
     </ol>
     <a
-    href="/media/materiais/appendix_10.pdf"
+    href="/static/materiais/appendix_10.pdf"
     alt="Appendix 10"
     target="_blank"
     >
@@ -489,7 +489,7 @@ def populate():
     'tempo_necessario': '5 minutes',
     'material': '''Where your clothes come from maps - Labour, Production,Consumers.
     <a
-    href="/media/materiais/appendix_11.pdf"
+    href="/static/materiais/appendix_11.pdf"
     alt="Appendix 11"
     target="_blank"
     >
@@ -510,7 +510,7 @@ def populate():
     </ol>
     </p>
     <img>
-    src="/media/materiais/Global_citizenship_is.jpg"'''},
+    src="/static/materiais/Global_citizenship_is.jpg"'''},
     {'numero': 5,
     'nome':  'So what? (solutions for the Dragon’s Den)',
     'publicado': True,
@@ -531,12 +531,12 @@ def populate():
     </ul>
     </p>
     <img>
-    src="/media/materiais/So_What.jpg"'''}
+    src="/static/materiais/So_What.jpg"'''}
     ]},
     {'nome': 'Workshop 4. Environmental development',
     'slug': 'workshop4',
     'publicado': True,
-    'imagem': 'workshops/workshop4/workshop4_main.jpg',
+    'imagem': 'static/workshops/workshop4/workshop4_main.jpg',
     'tempo_necessario': '''As this can be a very hands-on set of activities, it might be wise to
     distribute them over more than one hour, possibly, 50 to 60 minutes per activity''',
     'conteudo': '''<p class="m-0">
@@ -584,7 +584,7 @@ def populate():
     'material': '''thick gloves, tarp, one of the school’s trash bins and the
     provided extra material
     <a
-    href="/media/materiais/appendix_12.pdf"
+    href="/static/materiais/appendix_12.pdf"
     alt="Appendix 12"
     target="_blank"
     >
@@ -604,7 +604,7 @@ def populate():
     'tempo_necessario': '50-60 minutes',
     'material': '''How to recycle paper
     <a
-    href="/media/materiais/appendix_13.pdf"
+    href="/static/materiais/appendix_13.pdf"
     alt="Appendix 13"
     target="_blank"
     >
@@ -642,7 +642,7 @@ def populate():
     {'nome': 'Workshop 5. Economic development',
     'slug': 'workshop5',
     'publicado': True,
-    'imagem': 'workshops/workshop5/workshop5_main.jpg',
+    'imagem': 'static/workshops/workshop5/workshop5_main.jpg',
     'tempo_necessario': 'c. 60 minutes',
     'conteudo': '''<p class="m-0">
     <b>Teacher’s notes:</b>
@@ -675,7 +675,7 @@ def populate():
     underdeveloped community.</li>
     </ul>
     <a
-    href="/media/materiais/the_conscious_consumer.jpg"
+    href="/static/materiais/the_conscious_consumer.jpg"
     alt="The Conscious Consumer"
     >
     The Conscious Consumer Image
@@ -732,7 +732,7 @@ def populate():
     {'nome': 'Workshop 6. Debate',
     'slug': 'workshop6',
     'publicado': True,
-    'imagem': 'workshops/workshop6/workshop6_main.jpg',
+    'imagem': 'static/workshops/workshop6/workshop6_main.jpg',
     'tempo_necessario': 'c. 60 minutes',
     'conteudo': '''<p class="m-0">
     <b>Teacher’s notes:</b>
@@ -754,7 +754,7 @@ def populate():
     'publicado': True,
     'tempo_necessario': '60 minutes',
     'material': '''debate cards <a
-    href="/media/materiais/appendix_15.pdf"
+    href="/static/materiais/appendix_15.pdf"
     alt="Appendix 15"
     target="_blank">
     Word search (Appendix 15, p. 82)
@@ -788,7 +788,7 @@ def populate():
     {'nome': 'Workshop 7. Upcycling',
     'slug': 'workshop7',
     'publicado': True,
-    'imagem': 'workshops/workshop7/workshop7_main.jpg',
+    'imagem': 'static/workshops/workshop7/workshop7_main.jpg',
     'tempo_necessario': 'c. 60 minutes',
     'conteudo': '''<p class="m-0">
     <b>Teacher’s notes:</b>
@@ -813,7 +813,7 @@ def populate():
     'publicado': True,
     'tempo_necessario': '60 minutes',
     'material': '''This guide provides <a
-    href="/media/materiais/appendix_16.pdf"
+    href="/static/materiais/appendix_16.pdf"
     alt="Appendix 16"
     target="_blank">
     Word search (Appendix 16, p. 92)
@@ -845,7 +845,7 @@ def populate():
     {'nome': 'Workshop 8. The Bear’s cave - Final',
     'slug': 'workshop8',
     'publicado': True,
-    'imagem': 'workshops/workshop8/workshop8_main.jpg',
+    'imagem': 'static/workshops/workshop8/workshop8_main.jpg',
     'tempo_necessario': 'c.50 - 60 minutes',
     'conteudo': '''<p class="m-0">
     <b>Teacher’s notes:</b>
@@ -881,7 +881,7 @@ def populate():
     'publicado': True,
     'tempo_necessario': '60 minutes',
     'material': '''Bear's cave scorecard <a
-    href="/media/materiais/appendix_17.pdf"
+    href="/static/materiais/appendix_17.pdf"
     alt="appendix 17"
     target="_blank">
     Bear's cave scorecard (Appendix 17, p. 103)
