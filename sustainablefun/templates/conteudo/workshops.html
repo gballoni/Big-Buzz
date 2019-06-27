@@ -12,7 +12,11 @@
             <div class="col-lg-6 no-padding">
                 <div class="card">
                     <div class="workshop-div">
-                        <img src="{{ workshop.imagem.url }}" class="card-img-top workshop-image" alt="Imagem do workshop">
+                        <img
+                            src="/static/workshops/{{ workshop.slug }}/{{ workshop.slug }}_main.jpg"
+                            class="card-img-top workshop-image"
+                            alt="Imagem do workshop"
+                        >
                     </div>
                     <div class="card-body">
                         <h4 class="card-title">{{workshop.nome}}</h4>

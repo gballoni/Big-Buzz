@@ -1,15 +1,44 @@
-from .models import Workshop
-from util.funcoes import envia_mensagem, cria_forms
+from .models import Workshop, Mensagem
+from util.funcoes import cria_forms, get_client_ip
 from util.constantes import testimonials as _testimonials, reasons
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, render
+from django.core.mail import send_mail
 
 # Create your views here.
+
+def envia_mensagem(request):
+    _assunto = 'Contato - Sustanaible Fun'
+    _ip = get_client_ip(request)
+    _nome = request.POST.get('nome')
+    _telefone = request.POST.get('telefone')
+    _mensagem = request.POST.get('mensagem')
+    _email = request.POST.get('email')
+    _para = ['rodrigo.pereira@isemear.org.br']
+    m = Mensagem(
+        assunto=_assunto,
+        nome=_nome,
+        telefone=_telefone,
+        email=_email,
+        para=_para,
+        ip=_ip,
+        mensagem=_mensagem)
+    m.save()
+    mensagem = 'De: ' + _nome + '\n' +\
+        'Telefone: ' + _telefone + '\n' +\
+        'Mensagem: ' + _mensagem + '\n' +\
+        'IP:' + _ip
+    send_mail(
+        _assunto,
+        mensagem,
+        _email,
+        _para,
+        fail_silently=False)
 
 def index(request):
     context = {
         'reasons': reasons,
-        'testimonials': testimonials,
+        'testimonials': _testimonials,
         'form': cria_forms()
     }
     return render(request, 'conteudo/index.html', context)

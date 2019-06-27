@@ -1,13 +1,5 @@
-.pt-7 {
-    padding-top: 7rem !important;
-}
-
 .paragraph {
     color: dimgray;
-}
-
-hr.half-width {
-    width: 50%;
 }
 
 .bg1 {
@@ -25,13 +17,13 @@ hr.half-width {
 #call-section-one{
     color: #FFFFFF;
     text-shadow: 1px 1px 1px black;
-    font-size: 6em;
+    font-size: 4em;
 }
 
 #subtitle-section-one{
-    font-size: 2em;
-    color: #000000;
-    text-shadow: 1px 1px 1px whitesmoke;
+    font-size: 1em;
+    color: #ccc;
+    text-shadow: 1px 1px 1px #333;
 }
 
 .bg3 {
@@ -46,8 +38,41 @@ hr.half-width {
   background-size: cover;
 }
 
-
 h1.secao3 {
     color: white;
     text-shadow: 1px 1px black;
+}
+
+
+@media screen and (min-width: 480px){
+  #subtitle-section-one {
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (min-width: 576px){
+  #subtitle-section-one {
+    font-size: 1.5em;
+  }
+  #call-section-one{
+      font-size: 6em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #subtitle-section-one {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #subtitle-section-one {
+    font-size: 1.75em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #subtitle-section-one {
+    font-size: 2em;
+  }
 }

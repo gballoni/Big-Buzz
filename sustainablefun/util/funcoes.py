@@ -1,23 +1,16 @@
 import os
 from slugify import slugify
 from base.forms import ContactForm
-from django.core.mail import send_mail
 
 # Funções utilitárias que serão utilizadas em vários módulos
 
-def envia_mensagem(request):
-    assunto = 'Contato - Sustanaible Fun'
-    mensagem = 'De: ' + request.POST.get('nome') + '\n' +\
-        'Telefone: ' + request.POST.get('telefone') + '\n' +\
-        'Mensagem: ' + request.POST.get('mensagem')
-    email = request.POST.get('email')
-    para = ['rodrigo.pereira@isemear.org.br']
-    send_mail(
-        assunto,
-        mensagem,
-        email,
-        para,
-        fail_silently=False)
+def get_client_ip(request):
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip
 
 def cria_forms():
     return ContactForm(None)

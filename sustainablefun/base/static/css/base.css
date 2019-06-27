@@ -2,6 +2,45 @@ html {
   font-size: 1rem;
 }
 
+.pt-7 {
+    padding-top: 7rem !important;
+}
+
+hr.half-width {
+    width: 50%;
+}
+
+img {
+  max-width: 100%;
+}
+
+[class*="bg-"] {
+  position: relative;
+  z-index: 0;
+}
+
+[class*="bg-"]:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5000px;
+  width: 90000px;
+  height: 100%;
+  z-index: -1;
+}
+
+.bg-overlay {
+  background-color: rgba(0, 0, 0, .35);
+}
+
+.bg-overlay:after{
+  background-color: rgba(0, 0, 0, .35);
+}
+
+.mw-50 {
+  max-width: 50% !important;
+}
+
 #main .workshop h1, #main .workshop .h1 {
   color: rgb(27,181,157);
   font-size: 3rem;
@@ -41,32 +80,24 @@ html {
   border: solid 3px rgb(27,181,157);
 }
 
-.mw-50 {
-  max-width: 50% !important;
-}
-
-// Small devices (landscape phones, 576px and up)
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 576px){
   .mw-sm-50 {
     max-width: 50% !important;
   }
 }
 
-// Medium devices (tablets, 768px and up)
 @media screen and (min-width: 768px) {
   .mw-md-50 {
     max-width: 50% !important;
   }
 }
 
-// Large devices (desktops, 992px and up)
 @media screen and (min-width: 992px) {
   .mw-lg-50 {
     max-width: 50% !important;
   }
 }
 
-// Extra large devices (large desktops, 1200px and up)
 @media screen and (min-width: 1200px) {
   .mw-xl-50 {
     max-width: 50% !important;

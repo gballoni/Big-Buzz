@@ -6,23 +6,23 @@
     background: rgba(255, 255, 255, 0.4);
 }
 
-.ITEM_MENU {
+.MENU .ITEM_MENU {
     /*text-shadow: 2px 2px dimgray;*/
 }
 
-.MENU_OPACO {
+.MENU .MENU_OPACO {
     background-color: lightgray;
     transition: background-color 0.2s linear;
 }
 
-.ITEM_MENU_OPACO {
+.MENU .ITEM_MENU_OPACO {
     color: black !important;
     font-weight: normal;
     text-shadow: 0px 0px black;
 }
 
 
-li {
+.MENU li {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     /*background-color: #404040;*/
@@ -32,7 +32,7 @@ li {
     overflow: hidden;
 }
 
-li::after {
+.MENU li::after {
     background-color: rgba(0, 200, 81, 0.7);
     content: "";
     width: 0;
@@ -43,7 +43,7 @@ li::after {
     position: absolute;
 }
 
-.PAGINA_ATUAL::after {
+.MENU .PAGINA_ATUAL::after {
     background-color: rgba(0, 200, 81, 0.7);
     content: "";
     width: 100% !important;
@@ -54,15 +54,15 @@ li::after {
     position: absolute;
 }
 
-.PAGINA_ATUAL_TEXTO {
+.MENU .PAGINA_ATUAL_TEXTO {
     color: rgb(80, 80, 80) !important;
 }
 
-li:hover::after {
+.MENU li:hover::after {
     width: 100%;
 }
 
-ul {
+.MENU ul {
     list-style: none;
     padding: 0;
     margin: 0;

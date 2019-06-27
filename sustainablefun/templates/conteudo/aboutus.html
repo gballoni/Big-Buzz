@@ -2,25 +2,28 @@
 {% load static %}
 
 {% block styles %}
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="{% static 'css/contatoForms.css' %}">
     <link rel="stylesheet" href="{% static 'css/secao1.css' %}">
     <link rel="stylesheet" href="{% static 'css/aboutus.css' %}" type="text/css">
 {% endblock %}
 
 {% block content %}
-    <div class="hero">
-        <div class="inner-container">
-            <h1 class="text-center text-light text-height-bold"><strong>About Us</strong></h1>
-            <a style="color:whitesmoke;" href="{% url 'base:index' %}">Home / </a>
-            <a style="color:whitesmoke;" href="{% url 'base:aboutus' %}">About Us</a>
+    <div class="container-fluid p-0">
+        <div class="hero">
+            <div class="inner-container">
+                <h1 class="text-center text-light text-height-bold"><strong>About Us</strong></h1>
+                <a style="color:whitesmoke;" href="{% url 'base:index' %}">Home / </a>
+                <a style="color:whitesmoke;" href="{% url 'base:aboutus' %}">About Us</a>
+            </div>
+            <img src="{% static 'images/aboutus.jpg' %}" class="hero-image">
         </div>
-        <img src="{% static 'images/aboutus.jpg' %}" class="hero-image">
     </div>
 
     <div class="container">
         <div class="row top-margin justify-content-left">
-            <h2>Who We Are</h2>
+            <div class="col">
+                <h2>Who We Are</h2>
+            </div>
         </div>
 
         <div class="row justify-content-center align-items-center">
@@ -43,8 +46,15 @@
         </div>
 
         <div class="row justify-content-center align-items-center mt-2">
-            <a target="_blank" href="/static/materiais/sustainablefun.pdf"
-               class="btn btn-lg btn-success"><strong>GET THE DOCS</strong></a>
+            <div class="col">
+                <a
+                    target="_blank"
+                    href="/static/materiais/sustainablefun.pdf"
+                    class="btn btn-lg btn-success"
+                >
+                    <strong>GET THE DOCS</strong>
+                </a>
+            </div>
         </div>
         <!--<div style="text-align: right"><img src="{% static 'images/aboutus2.jpg' %}"  /></div>-->
 

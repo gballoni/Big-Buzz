@@ -62,3 +62,12 @@ class Atividade(models.Model):
 
     def __str__(self):
         return f"{self.workshop} - {self.numero}/{self.nome}"
+
+class Mensagem(models.Model):
+    assunto = models.CharField(verbose_name="Assunto da Mensagem", max_length=512)
+    nome = models.CharField(verbose_name="Nome do Autor", max_length=512)
+    telefone = models.CharField(verbose_name="Telefone do Autor", max_length=512)
+    email = models.CharField(verbose_name="Email do Autor", max_length=512)
+    para = models.CharField(verbose_name="Enviado Para", max_length=512)
+    ip = models.CharField(verbose_name="IP do autor", max_length=512)
+    mensagem = RichTextField(verbose_name="Mensagem")

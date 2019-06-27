@@ -15,7 +15,7 @@
                     mensagem: $('#form_mensagem textarea').val()
                 },
                 success: function(msg){
-                  $("#formulario").html(msg.resposta);
+                  $("#formulario").html("<div class=\"alert alert-success\" role=\"alert\">" + msg.resposta + "</div>");
                 },
                 error: function () {
                     window.alert('Ocorreu um erro no envio do Formulário!')
