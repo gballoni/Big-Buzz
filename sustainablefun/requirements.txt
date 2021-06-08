@@ -1,6 +1,6 @@
 # Dependencias base
 django==2.2.2
-Pillow==5.4.1
+Pillow==8.2.0
 astroid==2.1.0
 pylint==2.2.2
 gunicorn==19.9.0
